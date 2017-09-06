@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+     <ImageView
+        android:id="@+id/imgv_voice_wakeup"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/wake_voice_64" />
+     
+     <RelativeLayout
+          android:id="@+id/layout_content" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+	      android:layout_toRightOf="@+id/imgv_voice_wakeup"
+	      android:layout_centerVertical="true" >
+	     <TextView
+	         android:id="@+id/tv_content"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textSize="18dp"
+	         android:textColor="@color/black"
+	         android:text="哦啦语音唤醒功能已开启"/>
+	     <LinearLayout 
+	         android:layout_width="fill_parent"
+             android:layout_height="2dp"
+             android:layout_below="@+id/tv_content"
+             android:layout_alignRight="@+id/tv_content"
+             android:background="#ffffff">
+	         
+	     </LinearLayout>
+     </RelativeLayout>
+     
+     <ImageView
+         android:id="@+id/imgv_close"
+         android:layout_width="25dp"
+         android:layout_height="25dp"   
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"      
+         android:layout_centerVertical="true"
+         android:src="@drawable/icon_dialog_close">
+	     </ImageView>
+      
+      
+      <!-- <RelativeLayout
+          android:id="@+id/layout_close" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="5dp"
+	      android:layout_centerVertical="true" >
+	      <ImageView
+	         android:id="@+id/imgv_close"
+	         android:layout_width="20dp"
+	         android:layout_height="20dp"
+	         
+	         android:layout_marginTop="4dp"
+	         android:src="@drawable/icon_dialog_close">
+	     </ImageView>
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+             android:layout_below="@+id/imgv_close"
+             android:layout_marginTop="5dp"
+	         android:textSize="12dp"
+	         android:textColor="@color/black"
+	         android:text="关闭"/> 
+     </RelativeLayout>-->
+</RelativeLayout>

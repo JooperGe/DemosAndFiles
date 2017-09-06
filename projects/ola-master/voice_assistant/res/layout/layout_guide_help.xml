@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bar"
+	    android:orientation="vertical">
+	    
+	    <TextView 
+		    android:id="@+id/tv_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_gravity="center"
+	        android:text="@string/u_can_ask_like_this"
+	        android:textColor="@color/black"
+	        android:textSize="20dp"/>
+    </LinearLayout>
+    
+	<ListView
+        android:id="@+id/layout_content_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_help_content"
+        android:cacheColorHint="#00000000"
+        android:clickable="false"
+        android:footerDividersEnabled="false"
+        android:divider="@drawable/line_content"
+        android:listSelector="@drawable/list_item_bg_help_guide"
+        android:orientation="vertical" >
+     </ListView>
+
+</LinearLayout>

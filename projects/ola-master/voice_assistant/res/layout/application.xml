@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/setting_background_color"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:contentDescription="@string/img_content_discription"
+        android:src="@drawable/ola"
+        android:layout_marginTop="12.7dp"
+        android:layout_marginBottom="12.7dp"
+        android:layout_marginLeft="12.7dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"    	
+        android:layout_marginTop="12.7dp"
+        android:layout_marginBottom="12.7dp"
+        android:layout_marginLeft="6.7dp"
+    	android:orientation="vertical">
+    	
+	    <TextView
+	        android:id="@+id/label_app"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ellipsize="end"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:text="@string/teststring"
+	        android:layout_alignParentTop="true"
+	        android:textColor="@color/setting_grid_text_color"
+	        android:textSize="13.3sp" />
+    
+	     <TextView
+	        android:id="@+id/label_des"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ellipsize="end"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:text="@string/setting_close_third_party_app_description"
+	        android:layout_alignParentBottom="true"
+	        android:textColor="@color/setting_grid_description_color"
+	        android:textSize="11.7sp" />
+	     
+	     <ImageView
+	        android:id="@+id/icon_arrow"
+	        android:layout_width="5.7dp"
+	        android:layout_height="11dp"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/label_des"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignBottom="@+id/label_des"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:scaleType="fitCenter"
+	        android:contentDescription="@string/img_content_discription"
+	        android:src="@drawable/lock_screengo_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

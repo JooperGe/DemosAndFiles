@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/tv_remind"
+    android:text="确定将123添加到张三吗"
+    android:textColor="@color/text_content_color"
+    android:textSize="20sp"
+    />
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+     android:layout_marginTop="10dp"
+    >
+    <TextView 
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:text="姓名:"
+        android:textColor="@color/text_content_color"
+    	android:textSize="20sp"
+        />
+    <EditText 
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3.0"
+        android:text="張三"
+        android:id="@+id/contact_name"
+         android:textColor="@color/text_content_color"
+    	android:textSize="20sp"
+     	android:background="@drawable/background"
+        />
+</LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+     android:layout_marginTop="10dp"
+    >
+    <TextView 
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:text="电话:"
+        android:textColor="@color/text_content_color"
+    android:textSize="20sp"
+        />
+    <EditText 
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3.0"
+       android:hint="1234556"
+        android:id="@+id/contact_number"
+         android:textColor="@color/text_content_color"
+    	android:textSize="20sp"
+     	android:background="@drawable/background"
+     	android:layout_marginBottom="20dp"
+        />
+</LinearLayout>
+
+<!--     <EditText -->
+<!--         android:id="@+id/tv_confirm" -->
+<!--         android:layout_width="0dp" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginBottom="@dimen/content_margin_top_and_bottom" -->
+<!--         android:layout_marginLeft="@dimen/content_index_margin_left" -->
+<!--         android:layout_marginRight="@dimen/whole_content_margin_right" -->
+<!--         android:layout_marginTop="@dimen/content_margin_top_and_bottom" -->
+<!--         android:layout_weight="0.84" -->
+<!--         android:lines="3" -->
+<!--         android:background="@drawable/background" -->
+<!--         android:gravity="left" -->
+<!--         android:text="@string/ok" -->
+<!--         android:textColor="@color/text_content_color" -->
+<!--         android:textSize="@dimen/content_primary" /> -->
+
+</LinearLayout>

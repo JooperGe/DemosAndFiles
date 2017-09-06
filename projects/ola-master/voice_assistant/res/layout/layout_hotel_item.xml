@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        style="@style/selection_index"
+        android:layout_marginLeft="@dimen/content_index_margin_left"
+        android:layout_marginRight="@dimen/content_index_margin_right" />
+
+    <ImageView
+        android:id="@+id/imgv_hotel"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="@dimen/content_margin_top_and_bottom"
+        android:layout_marginTop="@dimen/content_margin_top_and_bottom"
+        android:contentDescription="@string/img_content_discription"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_default" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="90dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="上海卓美来喜相会宾馆"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_primary" />
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_below="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="上海市浦东新区樱花路831号"
+                android:textColor="@color/text_content_color"
+                android:textSize="@dimen/content_secondary" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="@style/poi_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_address"
+                android:layout_alignParentRight="true"
+                android:max="10" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_top"
+            android:layout_above="@+id/tv_des"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textColor="@color/text_content_number_color"
+            android:textSize="@dimen/title_primary" />
+        
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="總體不錯。"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_secondary" />
+
+        <TextView
+            android:id="@+id/tv_user_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_price"
+            android:layout_toLeftOf="@+id/tv_retate_lable"
+            android:singleLine="true"
+            android:textColor="@color/text_content_assist_color_1"
+            android:textSize="@dimen/content_secondary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_retate_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:text="@string/hotel_grade"
+            android:textColor="@color/text_content_assist_color_2"
+            android:textSize="@dimen/content_secondary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

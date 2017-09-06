@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#000000"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/autoupdate_logo"
+        android:layout_width="79dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_music_head_form"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6.5dp"
+        android:paddingRight="15.5dp"
+        android:paddingTop="1.5dp" >
+
+        <ImageView
+            android:id="@+id/artwork"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_music_head_form"
+            android:contentDescription="@string/teststring"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_defalut_music_author" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/btn_music_play"
+        android:layout_toRightOf="@+id/autoupdate_logo"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+			android:focusableInTouchMode="true"
+			android:focusable="true"
+			android:marqueeRepeatLimit="marquee_forever"
+            android:text="冰雨"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/artist_album"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="刘德华 - 冰雨"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_music_play"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dip"
+        android:contentDescription="@string/teststring"
+        android:layout_toLeftOf="@+id/btn_next"
+        android:src="@drawable/icon_play" />
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toLeftOf="@+id/btn_cancel"
+        android:contentDescription="@string/teststring"
+        android:src="@drawable/icon_play_next" />
+
+    <ImageView
+        android:id="@+id/btn_cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dip"
+        android:contentDescription="@string/teststring"
+        android:src="@drawable/music_close" />
+
+</RelativeLayout>

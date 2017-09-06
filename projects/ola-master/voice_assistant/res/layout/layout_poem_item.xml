@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" 
+        android:background="@drawable/background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/poem_txt_title"
+            android:textSize="@dimen/txt_poem_title"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/txt_size_content" 
+            android:textColor="@color/poem_txt_author"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/bg_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_line"
+            android:contentDescription="@string/img_content_discription" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/txt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_poem_content"
+            android:textColor="@color/poem_txt_content"
+            android:layout_marginBottom="5dp"
+            android:lineSpacingMultiplier="1.5"/>
+    </LinearLayout>
+
+   <ImageView
+        android:id="@+id/layout_hook1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/icon_hook" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_hook"
+        android:layout_toRightOf="@+id/layout_hook1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_hook"
+        android:layout_toLeftOf="@+id/layout_hook2" />
+    <ImageView
+        android:id="@+id/layout_hook2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/icon_hook" />
+
+</RelativeLayout>

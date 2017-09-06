@@ -1,0 +1,417 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viash.voice_assistant"
+    android:versionCode="318"
+    android:versionName="2.12" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="14" />    
+    
+    <!-- CHOGEE  -->
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/> 
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>  
+
+    <application
+        android:name="com.via.android.voice.floatview.VIAApplication"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f9deb39a768948c08e3c2721a7a96531" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="4G1Bz248Ofoeua5rXzYssr5l" />
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+             <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.viash.voicelib.service.MusicService"
+            android:enabled="true"
+            android:process=":music" >
+        </service>
+        <service android:name=".service.MusicService" >
+        </service>
+        <service android:name=".service.MainService" >
+        </service>
+        <service android:name=".service.AutoUpdateNotificationService" >
+        </service>
+        <service android:name=".service.CheckServerMsgService" 
+            android:process=":remote" >
+        </service>
+        <service
+            android:name=".service.VoiceAssistantService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.viash.voice_assistant.service.VoiceAssistant" />
+            </intent-filter>
+        </service>
+        <service android:name="com.via.android.voice.floatview.FloatViewService" >
+        </service>
+        
+        <service
+            android:name=".service.VoiceSdkService"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".service.MusicNotificationService">
+        </service>
+        <service android:name="com.via.android.voice.floatview.FloatViewService" >
+        </service>
+        <service 
+            android:name=".service.UploadService" >
+        </service>
+        <service 
+            android:name=".service.FloatViewIdleService" >
+        </service>   
+        <activity
+            android:name=".activity.GuideActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VOICE_COMMAND"/>
+                <action android:name="android.speech.action.WEB_SEARCH"/>
+                <action android:name="android.intent.action.ASSIST"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NewAssistActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            >
+        </activity>
+        <activity
+            android:name=".activity.ShowCouponPicActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.VersionInfoActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.AccountCenterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.PhoneAuthenticationActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.PhoneChangeActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.ForgetPwdActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.NicknameActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" /> 
+             <activity
+            android:name=".activity.LockHomeActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />   
+               <activity
+            android:name=".activity.LockScreenSettingActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />    
+                
+        <activity   android:theme="@android:style/Theme.Translucent"
+            android:name=".activity.LockActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" android:allowTaskReparenting="true" android:launchMode="singleTop"/>    
+        <activity
+            android:name=".activity.SmsIncomingCallSettingActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".activity.RecommendActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name=".activity.FeedBackActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <service   android:name=".service.LockScreenService"></service>
+        <receiver android:name=".receiver.LockScreenReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+               	<action android:name="android.intent.action.PHONE_STATE"/>
+               	<action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+	        	<action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.ImageBrowerActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <receiver android:name="com.viash.voice_assistant.receiver.MessageReceiver" >
+            <intent-filter>
+                <action android:name="com.viash.voice_assistant.NOTIFICATION_CANCEL" />
+                <action android:name="com.viash.voice_assistant.NOTIFICATION_STARTDOWNLOAD" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.viash.voice_assistant.receiver.BootUpBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+                <action android:name="com.viash.voice_assistant.REBOOT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.viash.voice_assistant.receiver.IncomingCallReceiver" >
+            <intent-filter android:priority="-1000" >
+                <action android:name="android.intent.action.PHONE_STATE" >
+                </action>
+                <action android:name="com.viash.voice_assistant.START_RECORD" >
+                </action>
+                <action android:name="com.viash.voice_assistant.ANSWER_ACTION" >
+                </action>
+                <action android:name="com.viash.voice_assistant.RESTORE_RING" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.viash.voice_assistant.receiver.AppListChangedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        
+     	<receiver android:name="com.viash.voice_assistant.receiver.SmsReceiver" >
+            <intent-filter android:priority="2147483647">
+                <action android:name="VIASH_RECEIVED_SMS_ACTION" />
+                <action android:name="VIASH_SENT_SMS_ACTION" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.viash.voice_assistant.receiver.CommonReceiver" >
+            <intent-filter>
+                <action android:name="com.viash.voice_assistant.action_show_record_ui" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver android:name="com.viash.voice_assistant.widget.OlaAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.viash.voice_assistant.widget.STARTCAPTURE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_ola" />
+        </receiver>        -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="51997c0156240b7b41034c51" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="tantan" >
+        </meta-data>
+        
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.renren.api.connect.android.AuthorizationHelper$BlockActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="com.renren.api.connect.android.status.StatusPubActivity" >
+        </activity>
+        <activity android:name="com.renren.api.connect.android.photos.UploadPhotoActivity" >
+        </activity>
+        <activity android:name="com.renren.api.connect.android.photos.CreateAlbumActivity" >
+        </activity>
+        <activity
+            android:name=".renren.PhotoServiceActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ThirdHomeScreenActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        
+         <provider
+            android:name="com.viash.voicelib.utils.alarm.AlarmProvider"
+            android:authorities="com.viash.voice_assistant.db"
+            android:exported="false" >        
+        </provider>
+
+        <activity
+            android:name="com.viash.voice_assistant.alarm.AlarmAlertFullScreen"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" >
+                </activity>
+
+        <receiver android:name="com.viash.voice_assistant.alarm.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.viash.voice_assistant.alarm.ALARM_ALERT" />
+                <action android:name="com.viash.voice_assistant.alarm.ALARM_CANCEL_SNOOZE" />
+                <action android:name="alarm_killed" />
+                <action android:name="cancel_snooze" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.viash.voice_assistant.alarm.AlarmAlert"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@style/alarm_alert" />
+
+        <service
+            android:name="com.viash.voice_assistant.alarm.AlarmKlaxon"
+            android:description="@string/alarm_klaxon_service_desc" >
+            <intent-filter>
+                <action android:name="com.viash.voice_assistant.alarm.ALARM_ALERT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

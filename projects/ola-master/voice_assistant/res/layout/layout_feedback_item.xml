@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_content_color"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/back"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/feedback"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/setting_title_text_size" />
+    
+     <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="20dp"
+		android:background="#1e1e1e"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+        
+	    <EditText
+	         android:id="@+id/editText_content"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"		     
+		     android:gravity="top|left"	
+		     android:background="#1e1e1e"	
+		     android:editable="true"     
+		     android:hint="请尽量说明：\n1、出现的具体问题是什么？\n2、怎么操作出现的这一问题？\n描述得越清楚，越方便我们的攻城师解决哦~"
+		     android:textColorHint="@color/login_txt_edit"
+		     android:textColor="@color/setting_text_color"
+		     android:textSize="@dimen/content_primary"
+		     android:maxLength="500"
+		     android:layout_weight="1" />
+	    
+	    <TextView
+            android:id="@+id/tv_input_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"     
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/content_secondary_number_2"/>
+    </LinearLayout>
+
+    <LinearLayout 
+         android:layout_width="fill_parent"
+	     android:layout_height="2dp"
+	     android:layout_marginLeft="20dp"
+	     android:layout_marginRight="20dp"
+	     android:layout_marginTop="10dp"
+	     android:background="#666666"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/your_address"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/content_primary" />
+    
+    <EditText
+         android:id="@+id/editText_contact"
+	     android:layout_width="fill_parent"
+	     android:layout_height="40dp"
+	     android:layout_marginLeft="20dp"
+	     android:layout_marginRight="20dp"
+	     android:layout_marginTop="5dp"
+	     android:background="@drawable/login_bg_input"
+	     android:hint="邮箱/QQ号/手机号"
+	     android:textColorHint="@color/login_txt_edit"
+	     android:textColor="@color/setting_text_color"
+	     android:textSize="@dimen/content_primary"
+	     android:maxLength="100" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/button_send"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"			       
+	        android:background="@drawable/login_btn_blue"
+	        android:textColor="@android:color/white"
+	        android:text="提交"
+	        android:textSize="@dimen/login_txt_btn"  />
+    </LinearLayout>
+    <!-- <Button
+        android:id="@+id/button_send"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn_blue"
+        android:textColor="@android:color/white"
+        android:text="提交"
+        android:textSize="@dimen/login_txt_btn"  /> -->
+   
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="您的意见将是我们进步的动力。"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/content_primary"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>

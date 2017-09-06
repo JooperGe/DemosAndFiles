@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#4c4c4c"
+    android:orientation="vertical">
+   
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+	     <ImageView
+	         android:id="@+id/imgv_warring"
+	         android:layout_width="25dp"
+	         android:layout_height="25dp"
+	         android:layout_marginLeft="10dp"
+	         android:src="@drawable/icons_remaind">
+	     </ImageView>
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_toRightOf="@id/imgv_warring"
+	         android:layout_marginLeft="10dp"
+	         android:textSize="22dp"
+	         android:textColor="@color/black"
+	         android:text="提示">
+	     </TextView>
+	     <ImageView
+	         android:id="@+id/imgv_close"
+	         android:layout_width="30dp"
+	         android:layout_height="30dp"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="10dp"	        
+	         android:src="@drawable/icon_dialog_close">
+	     </ImageView>
+     </RelativeLayout>
+     
+     <LinearLayout
+       android:id="@+id/seperate_line"  
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:layout_below="@+id/layout_title"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/title_line_09" >
+     </LinearLayout>
+     
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/seperate_line"
+        android:gravity="center_horizontal">
+	     <TextView
+	         android:id="@+id/tv_line1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"	        
+	         android:textSize="18dp"
+	         android:textColor="@color/black"
+	         android:layout_marginLeft="10dp"
+	         android:layout_marginRight="10dp"
+	         android:text="开启语音唤醒，会导致耗电量上升较快，请注意电量情况并及时充电。">
+	     </TextView>
+	     
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/tv_line1"	         
+	         android:gravity="center_horizontal"
+	         android:textSize="12dp"
+	         android:textColor="@color/black"
+	         android:layout_marginLeft="10dp"
+	         android:layout_marginRight="10dp"
+	         android:layout_marginTop="15dp"
+	         android:text="由于唤醒为体验功能，不尽完善，如有其他问题，请在意见反馈处提交建议，谢谢。">
+	     </TextView>
+     </RelativeLayout>
+</RelativeLayout>

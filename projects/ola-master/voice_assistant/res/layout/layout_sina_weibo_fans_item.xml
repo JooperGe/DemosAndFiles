@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="5dp"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        style="@style/selection_index"
+        android:layout_gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imgv_head"
+            android:layout_width="@dimen/sina_weibo_head_width"
+            android:layout_height="@dimen/sina_weibo_head_height"
+            android:layout_alignParentLeft="true"            
+            android:layout_marginRight="5dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/imgv_head"
+            android:layout_toRightOf="@+id/imgv_head"
+            android:text="微博名字"
+            android:textColor="@color/sina_weibo_txt_black"
+            android:textSize="@dimen/txt_sina_weibo_title" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_alignBottom="@+id/imgv_head"
+            android:singleLine="true"
+            android:textColor="@color/sina_weibo_txt_black"
+            android:textSize="@dimen/txt_sina_weibo_content" 
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="微博内容"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imgv_goto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icons_go"      
+        />
+</LinearLayout>

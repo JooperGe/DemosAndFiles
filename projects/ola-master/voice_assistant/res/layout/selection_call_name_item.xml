@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"   
+    android:background="@drawable/list_item_bg" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        style="@style/selection_index"        
+        android:layout_marginLeft="@dimen/content_index_margin_left"/>
+
+    <ImageView
+        android:id="@+id/imgv_head"
+        android:layout_width="@dimen/title_primary_icon_size"
+        android:layout_height="@dimen/title_primary_icon_size"
+        android:layout_marginLeft="@dimen/title_secondary_img_margin_left_right" 
+        android:contentDescription="@string/img_content_discription"
+        android:src="@drawable/default_contact_img" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/title_secondary_img_margin_left_right" 
+        android:textColor="@color/text_content_color" 
+        android:textSize="@dimen/content_primary"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/title_secondary_img_margin_left_right" 
+        android:textColor="@color/text_content_color" 
+        android:textSize="@dimen/content_primary"
+        android:visibility="gone" />
+</LinearLayout>

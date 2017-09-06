@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <ProgressBar
+       android:id="@+id/progressbar_cancel"
+       style="?android:attr/progressBarStyleHorizontal"  
+       android:layout_width="fill_parent"
+       android:layout_height="3dp"
+       android:progressDrawable="@drawable/progress_horizontal_blue"
+       android:background="#e4e4e4" />
+   <RelativeLayout
+       android:id="@+id/cancel_dial"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       android:layout_marginTop="3dp"
+       android:background="@drawable/list_item_bg" >
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true">
+	       <ImageView
+	           android:id="@+id/image_cancel_dial"
+	           android:layout_width="20dp"
+	           android:layout_height="20dp"
+	           android:layout_marginTop="4dp"
+	           android:src="@drawable/cancel_dial">
+	       </ImageView>
+	       <TextView
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_toRightOf="@id/image_cancel_dial"
+	           android:layout_marginLeft="10dp"
+	           android:textSize="20dp"
+	           android:textColor="@color/list_item_text"
+	           android:text="取消拨号">
+	       </TextView>
+       </RelativeLayout>
+   </RelativeLayout>
+</RelativeLayout>

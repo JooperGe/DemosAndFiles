@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_background"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/image_ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/widget_logo" />
+
+    <ImageView
+        android:id="@+id/image_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_ola"
+        android:src="@drawable/widget_speak" />
+    
+    <ImageView
+        android:id="@+id/image_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_speak"
+        android:layout_alignLeft="@id/image_speak"
+        android:layout_alignRight="@id/image_speak"
+        android:layout_alignTop="@id/image_speak" />
+    
+    <ImageView
+        android:id="@+id/image_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_speak"
+        android:layout_alignLeft="@id/image_speak"
+        android:layout_alignRight="@id/image_speak"
+        android:layout_alignTop="@id/image_speak"
+        android:src="@drawable/widget_mic" />
+
+</RelativeLayout>

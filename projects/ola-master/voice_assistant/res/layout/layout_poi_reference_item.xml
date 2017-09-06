@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        style="@style/selection_index"
+        android:layout_marginLeft="@dimen/content_index_margin_left"
+        android:layout_marginRight="@dimen/content_index_margin_right" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_margin_top_and_bottom"
+        android:layout_marginTop="@dimen/content_margin_top_and_bottom"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/teststring"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_primary" />
+
+        <TextView
+            android:id="@+id/tv_distance_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="@string/teststring"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_secondary" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_distance_info"
+            android:layout_gravity="left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/teststring"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_secondary" />
+    </RelativeLayout>
+
+</LinearLayout>

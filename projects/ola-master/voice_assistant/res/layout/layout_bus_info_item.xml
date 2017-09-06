@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/stock_title_background" >
+
+        <TextView
+            android:id="@+id/tv_start1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:singleLine="true"          
+            android:text="始发站："
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/bus_info_txt_size" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_start1"
+            android:layout_alignTop="@+id/tv_start1"
+            android:singleLine="true"
+            android:text="益江路盛夏路"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/bus_info_txt_size" />
+        
+        <TextView
+            android:id="@+id/tv_end1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_start1"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="终点站："
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/bus_info_txt_size" />  
+        
+        
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_end1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_end1"
+            android:singleLine="true"
+            android:text="施湾镇"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/bus_info_txt_size" />
+     </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/base_separate1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_line"
+        android:orientation="vertical" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="15dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal" >
+    
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="75dp" >
+	        
+	         <TextView
+		        android:id="@+id/tv_first"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="13dp"
+		        android:singleLine="true"
+		        android:text="早班车： 06:00"
+		        android:textColor="@color/text_content_color"
+		        android:textSize="@dimen/bus_info_txt_size" />
+	         
+	         <TextView
+		        android:id="@+id/tv_last"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/tv_first"
+	            android:layout_marginTop="10dp"
+		        android:singleLine="true"
+		        android:text="末班车： 20:00"
+		        android:textColor="@color/text_content_color"
+		        android:textSize="@dimen/bus_info_txt_size" />
+	    </RelativeLayout>     
+         <TextView
+	        android:id="@+id/tv_mils"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"          
+            android:gravity="center"
+            android:layout_weight="1"
+	        android:singleLine="true"
+	        android:text="全程23公里"
+	        android:textColor="@color/text_content_color"
+	        android:textSize="@dimen/bus_info_txt_size" />
+         
+          <TextView
+	        android:id="@+id/tv_map"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="5dp"
+	        android:singleLine="true"
+	        android:text="地图"
+	        android:textColor="@color/text_content_color"
+	        android:textSize="@dimen/bus_info_txt_size" />
+          
+          <ImageView
+            android:id="@+id/imgv_map"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginRight="15dp"
+	        android:src="@drawable/icons_maps_78"/>
+          
+    </LinearLayout> 
+    
+    <LinearLayout
+        android:id="@+id/base_separate2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_line"
+        android:orientation="vertical" />
+   	         
+    <TextView
+        android:id="@+id/tv_start_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:singleLine="true"          
+        android:text="始发：益江路盛夏路"
+        android:textColor="@color/text_content_color"
+        android:textSize="@dimen/bus_info_txt_size" />
+    
+    <TextView
+	    android:id="@+id/tv_pass"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="2dp"
+	    android:lineSpacingExtra="3dp"            
+	    android:text="益江路"
+	    android:textColor="@color/text_content_color"
+	    android:textSize="@dimen/bus_info_txt_size" />
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:orientation="vertical" />
+</LinearLayout>

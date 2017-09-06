@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txt_chat_system">#949494</color>
+    <color name="txt_chat_user">#d3d3d3</color>
+    <color name="txt_app_white">#d3d3d3</color>
+    <color name="txt_chat_left">#ffffff</color>
+    <color name="txt_chat_right">#ffffff</color>
+    <color name="txt_color">#ffffff</color>
+    <color name="transparent_background">#80ffffff</color>
+    <color name="app_bg">#1b1c1c</color>
+    <color name="setting_content_color">#0f1010</color>
+    <color name="bg_color_setting">#2c2c2c</color>
+    <color name="view_color_setting">#2a2a2a</color>
+    <color name="number_content_color">#8e8e90</color>
+    <color name="white">#000000</color>
+    <color name="black">#ffffff</color>
+    <color name="send_sms_txt_send">#ffffff</color>
+    <color name="send_sms_txt_cancel">#ffffff</color>
+    <color name="send_sms_txt_content">#464646</color>
+    <color name="send_sms_txt_num">#adadad</color>
+    <color name="send_sms_content">#4B4A4A</color>
+    <color name="calendar_date">#00c0ff</color>
+    <color name="calendar_title">#4c4c4c</color>
+    <color name="calendar_des">#727272</color>
+    <color name="weather_txt">#ffffff</color>
+    <color name="weather_bg0">#33b8e3</color>
+    <color name="weather_bg1">#0096c7</color>
+    <color name="weather_bg2">#027aa1</color>
+    <color name="weather_bg3">#016586</color>
+    <color name="weather_bg4">#005874</color>
+    <color name="weather_bg5">#004156</color>
+    <color name="sina_weibo_txt_black">#ffffff</color>
+    <color name="sina_weibo_txt_gray">#6e6e6e</color>
+    <color name="sina_weibo_txt_add">#00ccff</color>
+    <color name="sina_weibo_item_bg">#ffffff</color>
+    <color name="sina_weibo_txt_time">#6e6e6e</color>
+    <color name="music_bg_top">#2d2d2d</color>
+    <color name="music_bg_item">#434343</color>
+    <color name="music_item_bar">#33B5E5</color>
+    <color name="music_txt_title">#FFFFFF</color>
+    <color name="music_txt_des">#c9c9c9</color>
+    <color name="call_record_txt_title">#ffffff</color>
+    <color name="call_record_txt_bg">#ffffff</color>
+    <color name="call_record_txt_blue">#19a7df</color>
+    <color name="call_record_txt_yellow">#fda118</color>
+    <color name="call_record_txt_gray">#767676</color>
+    <color name="call_record_txt_default">#000000</color>
+    <color name="call_num_txt_content">#fefefe</color>
+    <color name="alarm_txt_time">#00ccff</color>
+    <color name="alarm_txt_black">#000000</color>
+    <color name="alarm_txt_gray">#ababab</color>
+    <color name="alarm_txt_blue">#33b5e5</color>
+    <color name="news_txt_title">#242424</color>
+    <color name="news_txt_des">#6e6e6e</color>
+    <color name="news_txt_content">#424242</color>
+    <color name="poem_txt_title">#00c0ff</color>
+    <color name="poem_txt_content">#ffffff</color>
+    <color name="poem_txt_author">#fefefe</color>
+    <color name="poem_bg">#ffffff</color>
+    <color name="app_black">#4b4a4a</color>
+    <color name="app_white">#ffffff</color>
+    <color name="bluetooth_gray">#4f4d4e</color>
+    <color name="bluetooth_blue">#32b2e3</color>
+    <color name="shopping_title">#4B4A4A</color>
+    <color name="shopping_address">#AAAAAA</color>
+    <color name="shopping_price_gary">#4B4A4A</color>
+    <color name="shopping_price_red">#cc0000</color>
+    <color name="shopping_bg">#fffefa</color>
+    <color name="video_item_bg">#eaebef</color>
+    <color name="video_txt_name">#4b4a4a</color>
+    <color name="hotel_txt_name">#ffffff</color>
+    <color name="hotel_txt_address">#ffffff</color>
+    <color name="hotel_txt_price">#00ccff</color>
+    <color name="hotel_txt_rating">#e21c1c</color>
+    <color name="hotel_txt_bg">#434343</color>
+    <color name="selection_item_index">#8d8e90</color>
+    <color name="plane_bg">#434343</color>
+    <color name="plane_begin_label">#33b5e5</color>
+    <color name="plane_end_label">#3ebb78</color>
+    <color name="plane_title">#ffffff</color>
+    <color name="plane_content">#c9c9c9</color>
+    <color name="plane_price">#00ccff</color>
+    <color name="plane_rebate">#ffffff</color>
+    <color name="plane_city">#ffffff</color>
+    <color name="sms_txt_name">#6e6e6e</color>
+    <color name="sms_txt_status">#ffffff</color>
+    <color name="sms_bg_status">#00ccff</color>
+    <color name="sms_txt_time">#00ccff</color>
+    <color name="sms_txt_content">#4b4a4a</color>
+    <color name="sms_bg">#ffffff</color>
+    <color name="contact_txt_name">#00b2ec</color>
+    <color name="contact_txt_num">#000000</color>
+    <color name="poi_txt_title">#4b4a4a</color>
+    <color name="poi_txt_des">#6e6e6e</color>
+    <color name="poi_txt_price">#ffa000</color>
+    <color name="poi_txt_index">#dd8200</color>
+    <color name="poem_seleciton_title">#4b4a4a</color>
+    <color name="poem_seleciton_author">#6e6e6e</color>
+    <color name="login_txt_title">#ffffff</color>
+    <color name="login_txt_edit">#656565</color>
+    <color name="login_txt_forget_pwd">#656565</color>
+    <color name="traffic_txt_select">#00ccff</color>
+    <color name="traffic_bg_select">#ffffff</color>
+    <color name="trffic_item_bg_gray">#f9f9f9</color>
+    <color name="traffic_txt_title">#000000</color>
+    <color name="traffic_txt_index_gray">#6e6e6e</color>
+    <color name="memo_txt_content">#4b4a4a</color>
+    <color name="memo_txt_time">#00c0ff</color>
+    <color name="route_txt_content">#4b4a4a</color>
+    <color name="btn_txt_disabled">#c2c2c2</color>
+    <color name="traffic_txt_blue">#00ccff</color>
+    <color name="statusbar_score_gold">#dd9c2f</color>
+    <color name="statusbar_score_silver">#f2f2f2</color>
+    <color name="statusbar_score_bronze">#c9aa71</color>
+    <color name="statusbar_username">#f2f2f2</color>
+    <color name="baike_highlight">#0099ff</color>
+    <color name="stock_txt_white">#ffffff</color>
+    <color name="stock_txt_green">#3ec029</color>
+    <color name="stock_txt_red">#ff0000</color>
+    <color name="selection_base_title_text">#fefefe</color>
+    <color name="list_item_text">#fefefe</color>
+    <color name="content_primary_number_color">#fec502</color>
+    <color name="text_content_assist_color">#00cbfa</color>
+    <color name="filter_list_bg_color">#0a5d93</color>
+
+    <!-- new colors -->
+    <!-- title -->
+    <color name="text_title_color">#ffffff</color>
+    <color name="text_title_function_color">#ffffff</color>
+
+    <!-- content -->
+    <color name="text_content_main_color">#fec502</color>
+    <color name="text_content_number_color">#fec502</color>
+    <color name="text_content_assist_color_1">#00cbfa</color>
+    <color name="text_content_assist_color_2">#bcbcbc</color>
+    <color name="text_content_color">#ffffff</color>
+    <!-- 
+    <color name="number_content_color">#8e8e90</color>
+     -->
+    <color name="text_security_content_color">#3fc12b</color>
+    <color name="text_notice_content_color">#ff0000</color>
+
+    <!-- background -->
+    <color name="bg_color">#282828</color>
+
+    <!-- dialog box -->
+    <color name="text_dialog_box_color">#ffffff</color>
+
+    <!-- pull down menu -->
+    <color name="text_pull_down_menu_color">#ffffff</color>
+
+    <!-- button -->
+    <color name="text_button_color">#ffffff</color>
+
+    <!-- special for stock -->
+    <!-- 
+    <color name="stock_txt_red">#ff0000</color>
+ -->
+    <!-- setting title background & text color -->
+    <color name="setting_background_color">#333333</color>
+    <color name="setting_text_color">#FFFFFF</color>
+    <color name="setting_context_color">#c9c9c9</color>
+    <color name="setting_grid_text_color">#f6f6f6</color>
+    <color name="setting_grid_description_color">#7e7e7e</color>    
+</resources>

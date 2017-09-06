@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <Button
+        android:id="@+id/btn_input_change"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_input_change_voice" />
+
+   
+
+    <Button
+        android:id="@+id/btn_voice"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/btn_help"
+        android:layout_toRightOf="@+id/btn_input_change"
+        android:background="@drawable/btn_voice_black"
+        />
+    <ImageView 
+        android:id="@+id/imgv_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btn_voice"
+        android:layout_alignRight="@+id/btn_voice"
+        android:layout_toLeftOf="@+id/btn_help"
+        android:layout_toRightOf="@+id/btn_input_change"
+        android:src="@drawable/bg_speak_size12"
+        android:contentDescription="@string/img_content_discription"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+     <ImageView
+        android:id="@+id/imgv_voice_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/btn_help"
+        android:layout_toRightOf="@+id/btn_input_change"
+        android:src="@drawable/bg_voice_load_blue" 
+        android:contentDescription="@string/img_content_discription"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_help" />
+
+    <ImageView
+        android:id="@+id/imgv_mike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/voice_mike_white" />
+
+</RelativeLayout>

@@ -1,0 +1,1465 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customSwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_setting"
+    android:fillViewport="true"
+    android:gravity="end"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/back"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/menu_settings"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/setting_title_text_size" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/setting_title"
+        android:background="@color/bg_color_setting"
+        android:fillViewport="true"
+        android:gravity="top|center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical" >
+
+            <!--
+            <LinearLayout
+                android:id="@+id/setting_layout_background"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"
+                android:gravity="right" >
+
+               
+	            <ImageView
+	                android:id="@+id/backgroundView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@string/background"
+	                android:src="@drawable/icon_theme_1" />
+	
+	            <ImageView
+	                android:id="@+id/backgroundView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@string/background"
+	                android:src="@drawable/icon_theme_2" />
+	
+	            <ImageView
+	                android:id="@+id/backgroundView3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@string/background"
+	                android:src="@drawable/icon_theme_3" />                
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/other_layout_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/setting_textview_basicsetting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:padding="4dp"
+                    android:text="@string/setting_basicsetting"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_content_color"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_voicesetting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_voicesetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_voicesetting" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_voicesetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_voicesetting"
+                            android:text="@string/setting_ttsvoicesetting"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <com.viash.voice_assistant.component.CustomSwitchButton
+                            android:id="@+id/setting_swtichbutton_voicesetting"
+                            style="@style/customSwitchStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            customSwitch:backgroundMask="@drawable/sb_mask_background"
+                            customSwitch:leftBackground="@drawable/sb_left_background"
+                            customSwitch:orientation="horizontal"
+                            customSwitch:rightBackground="@drawable/sb_right_background"
+                            customSwitch:textOff="    "
+                            customSwitch:textOn="    "
+                            customSwitch:textOnThumb="false"
+                            customSwitch:thumb="@drawable/switch_thumb"
+                            customSwitch:track="@drawable/switch_track" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" 
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_auto_start_record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_auto_start_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_auto_start_record" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_auto_start_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_auto_start_record"
+                            android:text="@string/auto_start_record"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <com.viash.voice_assistant.component.CustomSwitchButton
+                            android:id="@+id/setting_swtichbutton_auto_start_record"
+                            style="@style/customSwitchStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            customSwitch:backgroundMask="@drawable/sb_mask_background"
+                            customSwitch:leftBackground="@drawable/sb_left_background"
+                            customSwitch:orientation="horizontal"
+                            customSwitch:rightBackground="@drawable/sb_right_background"
+                            customSwitch:textOff="    "
+                            customSwitch:textOn="    "
+                            customSwitch:textOnThumb="false"
+                            customSwitch:thumb="@drawable/switch_thumb"
+                            customSwitch:track="@drawable/switch_track" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+			            android:id="@+id/setting_layout_network_tips"
+			            android:layout_width="fill_parent"
+			            android:layout_height="52dp"
+			            android:background="@drawable/list_item_bg_setting"
+			            android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/icons_remaind" />
+                        
+			            <TextView
+			                android:id="@+id/setting_textview_network_tips"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"			                
+			                android:layout_centerVertical="true"
+			                android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@+id/setting_logo_tips"
+			                android:text="@string/setting_network_tips"
+			                android:textColor="@color/setting_text_color"
+			                android:textSize="18.6sp" />
+			
+			            <com.viash.voice_assistant.component.CustomSwitchButton
+			                android:id="@+id/setting_swtichbutton_network_tips"
+			                style="@style/customSwitchStyle"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_centerVertical="true"
+			                android:layout_marginRight="16dp"
+			                customSwitch:backgroundMask="@drawable/sb_mask_background"
+			                customSwitch:leftBackground="@drawable/sb_left_background"
+			                customSwitch:orientation="horizontal"
+			                customSwitch:rightBackground="@drawable/sb_right_background"
+			                customSwitch:textOff="    "
+			                customSwitch:textOn="    "
+			                customSwitch:textOnThumb="false"
+			                customSwitch:thumb="@drawable/switch_thumb"
+			                customSwitch:track="@drawable/switch_track" />
+			        </RelativeLayout>
+			        
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+                    
+                    <RelativeLayout
+			            android:id="@+id/setting_layout_floatview_ondesk"
+			            android:layout_width="fill_parent"
+			            android:layout_height="52dp"
+			            android:background="@drawable/list_item_bg_setting"
+			            android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_floatview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/icons_widget" />
+                        
+			            <TextView
+			                android:id="@+id/setting_textview_floatview_ondesk"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"			                
+			                android:layout_centerVertical="true"
+			                android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@+id/setting_logo_floatview"
+			                android:text="@string/setting_floatview_ondesk"
+			                android:textColor="@color/setting_text_color"
+			                android:textSize="18.6sp" />
+			
+			            <com.viash.voice_assistant.component.CustomSwitchButton
+			                android:id="@+id/setting_swtichbutton_floatview_ondesk"
+			                style="@style/customSwitchStyle"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_centerVertical="true"
+			                android:layout_marginRight="16dp"
+			                customSwitch:backgroundMask="@drawable/sb_mask_background"
+			                customSwitch:leftBackground="@drawable/sb_left_background"
+			                customSwitch:orientation="horizontal"
+			                customSwitch:rightBackground="@drawable/sb_right_background"
+			                customSwitch:textOff="    "
+			                customSwitch:textOn="    "
+			                customSwitch:textOnThumb="false"
+			                customSwitch:thumb="@drawable/switch_thumb"
+			                customSwitch:track="@drawable/switch_track" />
+			        </RelativeLayout>
+			        
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+                    
+                    <RelativeLayout
+			            android:id="@+id/setting_layout_voice_wakeup"
+			            android:layout_width="fill_parent"
+			            android:layout_height="52dp"
+			            android:background="@drawable/list_item_bg_setting"
+			            android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_voice_wakeup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/wake_voice_64" />
+                        
+			            <TextView
+			                android:id="@+id/setting_textview_voice_wakeup"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"			                
+			                android:layout_marginTop="5dp"
+			                android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@+id/setting_logo_voice_wakeup"
+			                android:text="语音唤醒(体验版)"
+			                android:textColor="@color/setting_text_color"
+			                android:textSize="18.6sp" />
+			
+			            <TextView
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"			                
+			                android:layout_centerVertical="true"
+			                android:layout_marginLeft="24.7dp"
+			                android:layout_marginBottom="5dp"
+			                android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/setting_logo_voice_wakeup"
+			                android:text="对着手机说‘哦啦你好’来唤醒"
+			                android:textColor="#959595"
+			                android:textSize="12sp" />
+			            
+			            <com.viash.voice_assistant.component.CustomSwitchButton
+			                android:id="@+id/setting_swtichbutton_voice_wakeup"
+			                style="@style/customSwitchStyle"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_centerVertical="true"
+			                android:layout_marginRight="16dp"
+			                customSwitch:backgroundMask="@drawable/sb_mask_background"
+			                customSwitch:leftBackground="@drawable/sb_left_background"
+			                customSwitch:orientation="horizontal"
+			                customSwitch:rightBackground="@drawable/sb_right_background"
+			                customSwitch:textOff="    "
+			                customSwitch:textOn="    "
+			                customSwitch:textOnThumb="false"
+			                customSwitch:thumb="@drawable/switch_thumb"
+			                customSwitch:track="@drawable/switch_track" />
+			        </RelativeLayout>
+			        
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+                    
+                    <!--
+                          <RelativeLayout
+                        android:id="@+id/setting_layout_voice_wakeup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_voice_wakeup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:src="@drawable/setting_logo_voice_wakeup" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_voice_wakeup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20.2dp"
+                            android:layout_toRightOf="@id/setting_logo_voice_wakeup"
+                            android:text="@string/voice_wakeup"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <com.viash.voice_assistant.component.CustomSwitchButton
+                            android:id="@+id/setting_swtichbutton_voice_wakeup"
+                            style="@style/customSwitchStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            customSwitch:backgroundMask="@drawable/sb_mask_background"
+                            customSwitch:leftBackground="@drawable/sb_left_background"
+                            customSwitch:orientation="horizontal"
+                            customSwitch:rightBackground="@drawable/sb_right_background"
+                            customSwitch:textOff="    "
+                            customSwitch:textOn="    "
+                            customSwitch:textOnThumb="false"
+                            customSwitch:thumb="@drawable/switch_thumb"
+                            customSwitch:track="@drawable/switch_track" />
+                    </RelativeLayout>                    -->
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_sms_incoming_call"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_sms_incoming_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/lockscreen_icon_message_press_big" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_sms_incoming_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_sms_incoming_call"
+                            android:text="@string/setting_remind_sms_incoming_call"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_sms_incoming_call_go"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_lock"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/lockscreen_icon_lock_press_big" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_tipsmessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_lock"
+                            android:text="@string/setting_tipsmessage_lock"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <TextView
+                            android:id="@+id/setting_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:layout_toLeftOf="@+id/setting_imageview_lock"
+                            android:text="@string/setting_basicsetting_start"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_voicetype"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_voicetype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_voicetype" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_voicetype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_voicetype"
+                            android:text="@string/setting_voicetype"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <TextView
+                            android:id="@+id/setting_voicetype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:layout_toLeftOf="@+id/setting_imageview_voicetype"
+                            android:text="@string/setting_basicsetting"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_voicetype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <!-- <RelativeLayout
+                        android:id="@+id/setting_layout_tips"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/icons_remaind" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_tips"
+                            android:text="@string/setting_tips"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+                    
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" /> -->
+                    
+                    <RelativeLayout
+                         android:id="@+id/voice_setting_record" 
+                         android:layout_width="fill_parent" 
+                         android:layout_height="52dp" 
+                         android:background="@drawable/list_item_bg_setting" 
+                         android:orientation="horizontal">
+                        
+                         <ImageView 
+                             android:id="@+id/voice_setting_logo_record" 
+	                         android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+	                         android:contentDescription="@string/img_content_discription"
+	                         android:src="@drawable/icons_settings" /> 
+                         
+                         <TextView 
+	                        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+	                         android:layout_toRightOf="@id/voice_setting_logo_record" 
+	                         android:text="@string/voice_radio_setting" 
+	                         android:textColor="@color/setting_text_color" 
+	                         android:textSize="18.6sp" /> 
+                         <TextView
+                            android:id="@+id/vadio_setting_voicetype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:layout_toLeftOf="@+id/setting_imageview_sms_incoming_call"
+                            android:text="@string/voice_setting_basic_setting"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+                         <ImageView
+                            android:id="@+id/setting_imageview_sms_incoming_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                     </RelativeLayout>
+                    <!--
+                     <RelativeLayout 
+                         android:id="@+id/setting_layout_lockhome" 
+                         android:layout_width="fill_parent" 
+                         android:layout_height="52dp" 
+                         android:background="@drawable/list_item_bg_setting" 
+                         android:orientation="horizontal">
+                    <ImageView android:id="@+id/setting_logo_lockhome" 
+                         android:layout_width="wrap_content" 
+                         android:layout_height="wrap_content" 
+                         android:layout_alignParentLeft="true" 
+                         android:layout_centerVertical="true" 
+                         android:layout_marginLeft="12.16dp" 
+                         android:src="@drawable/lockscreen_icon_lock_press_big" /> 
+                    <TextView android:id="@+id/setting_textview_lockhome" 
+                         android:layout_width="wrap_content" 
+                         android:layout_height="wrap_content" 
+                         android:layout_centerVertical="true" 
+                         android:layout_marginLeft="20.5dp" 
+                         android:layout_toRightOf="@id/setting_logo_lockhome" 
+                         android:text="@string/setting_tipsmessage_lockhome" 
+                         android:textColor="@color/setting_text_color" 
+                         android:textSize="18.6sp" /> 
+                         
+                         <TextView
+                            android:id="@+id/setting_lockhome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:layout_toLeftOf="@+id/setting_imageview_lockhome"
+                            android:text="@string/setting_basicsetting_uplock"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_lockhome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                     </RelativeLayout>
+                   
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="5dp"
+	                    android:background="#33333333" />
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_usercall"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="52dp"
+	                    android:orientation="horizontal" >
+	
+	                    <ImageView
+	                        android:id="@+id/setting_logo_usercall"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:layout_alignParentLeft="true"
+	                        android:layout_marginLeft="16.16dp"
+	                        android:src="@drawable/setting_logo_usercall" />
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_usercall"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:layout_marginLeft="20.2dp"
+	                        android:layout_toRightOf="@id/setting_logo_usercall"
+	                        android:text="@string/setting_usercall"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="18.6sp" />
+	
+	                    <TextView
+	                        android:id="@+id/setting_usercall"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:layout_marginRight="16.16dp"
+	                        android:layout_toLeftOf="@+id/setting_imageview_usercall"
+	                        android:text="@string/setting_usercall"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="18.6sp" />
+	
+	                    <ImageView
+	                        android:id="@+id/setting_imageview_usercall"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        android:layout_marginRight="16.16dp"
+	                        android:contentDescription="@string/setting_select"
+	                        android:src="@drawable/icons_go_58" />
+	                </RelativeLayout>
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="5dp"
+	                    android:background="#33333333" />
+	                
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_prompt"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_prompt"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:text="@string/setting_prompt"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <com.viash.voice_assistant.component.CustomSwitchButton
+	                        android:id="@+id/setting_swtichbutton_prompt"
+	                        style="@style/customSwitchStyle"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        customSwitch:backgroundMask="@drawable/sb_mask_background"
+	                        customSwitch:leftBackground="@drawable/sb_left_background"
+	                        customSwitch:orientation="horizontal"
+	                        customSwitch:rightBackground="@drawable/sb_right_background"
+	                        customSwitch:textOff="      "
+	                        customSwitch:textOn="      "
+	                        customSwitch:textOnThumb="false"
+	                        customSwitch:thumb="@drawable/switch_thumb"
+	                        customSwitch:track="@drawable/switch_track" />
+	
+	                </RelativeLayout>
+                    -->
+                </LinearLayout>
+
+                <!--
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_marginLeft="5dp"
+	                android:padding="10dp"
+	                android:text="@string/setting_map"
+	                android:textColor="@color/setting_text_color"
+	                android:textSize="20sp" />
+	
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/bg_main_form"
+	                android:orientation="vertical" >
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_map_display"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_map_display"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:text="@string/setting_map_display"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <TextView
+	                        android:id="@+id/setting_map_display"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:layout_marginRight="10dp"
+	                        android:layout_toLeftOf="@+id/setting_imageview_map_display"
+	                        android:text="@string/setting_map_display"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <ImageView
+	                        android:id="@+id/setting_imageview_map_display"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        android:contentDescription="@string/setting_select"
+	                        android:src="@drawable/setting_leftselect" />
+	
+	                </RelativeLayout>
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="5dp"
+	                    android:background="#33333333" />
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_map_traveltype"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_map_traveltype"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:text="@string/setting_map_traveltype"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <TextView
+	                        android:id="@+id/setting_map_traveltype"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:layout_marginRight="10dp"
+	                        android:layout_toLeftOf="@+id/setting_imageview_map_traveltype"
+	                        android:text="@string/setting_map_traveltype"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <ImageView
+	                        android:id="@+id/setting_imageview_map_traveltype"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        android:contentDescription="@string/setting_select"
+	                        android:src="@drawable/setting_leftselect" />
+	
+	                </RelativeLayout>
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="5dp"
+	                    android:background="#33333333" />
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_map_traffic"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_map_traffic"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:text="@string/setting_map_traffic"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <com.viash.voice_assistant.component.CustomSwitchButton
+	                        android:id="@+id/setting_swtichbutton_map_traffic"
+	                        style="@style/customSwitchStyle"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        customSwitch:backgroundMask="@drawable/sb_mask_background"
+	                        customSwitch:leftBackground="@drawable/sb_left_background"
+	                        customSwitch:orientation="horizontal"
+	                        customSwitch:rightBackground="@drawable/sb_right_background"
+	                        customSwitch:textOff="      "
+	                        customSwitch:textOn="      "
+	                        customSwitch:textOnThumb="false"
+	                        customSwitch:thumb="@drawable/switch_thumb"
+	                        customSwitch:track="@drawable/switch_track" />
+	
+	                </RelativeLayout>
+	            </LinearLayout>
+	
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_marginLeft="5dp"
+	                android:padding="10dp"
+	                android:text="@string/setting_musicsetting"
+	                android:textColor="@color/setting_text_color"
+	                android:textSize="20sp" />
+	
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/bg_main_form"
+	                android:orientation="vertical" >
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_searchonlinemusic"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_searchonlinemusic"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:text="@string/setting_searchonlinemusic"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <com.viash.voice_assistant.component.CustomSwitchButton
+	                        android:id="@+id/setting_swtichbutton_searchonlinemusic"
+	                        style="@style/customSwitchStyle"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        customSwitch:backgroundMask="@drawable/sb_mask_background"
+	                        customSwitch:leftBackground="@drawable/sb_left_background"
+	                        customSwitch:orientation="horizontal"
+	                        customSwitch:rightBackground="@drawable/sb_right_background"
+	                        customSwitch:textOff="      "
+	                        customSwitch:textOn="      "
+	                        customSwitch:textOnThumb="false"
+	                        customSwitch:thumb="@drawable/switch_thumb"
+	                        customSwitch:track="@drawable/switch_track" />
+	
+	                </RelativeLayout>
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="5dp"
+	                    android:background="#33333333" />
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_listenandsave"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_listenandsave"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:text="@string/setting_listenandsave"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <com.viash.voice_assistant.component.CustomSwitchButton
+	                        android:id="@+id/setting_swtichbutton_listenandsave"
+	                        style="@style/customSwitchStyle"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:layout_centerVertical="true"
+	                        customSwitch:backgroundMask="@drawable/sb_mask_background"
+	                        customSwitch:leftBackground="@drawable/sb_left_background"
+	                        customSwitch:orientation="horizontal"
+	                        customSwitch:rightBackground="@drawable/sb_right_background"
+	                        customSwitch:textOff="      "
+	                        customSwitch:textOn="      "
+	                        customSwitch:textOnThumb="false"
+	                        customSwitch:thumb="@drawable/switch_thumb"
+	                        customSwitch:track="@drawable/switch_track" />
+	
+	                </RelativeLayout>
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="5dp"
+	                    android:background="#33333333" />
+	
+	                <RelativeLayout
+	                    android:id="@+id/setting_layout_musicdownloadpath"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/setting_textview_musicdownloadpath"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/setting_musicdownloadpath"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <TextView
+	                        android:id="@+id/setting_musicdownloadpath"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginRight="10dp"
+	                        android:layout_toLeftOf="@+id/setting_imageview_musicdownloadpath"
+	                        android:text="@string/setting_basicsetting"
+	                        android:textColor="@color/setting_text_color"
+	                        android:textSize="16sp" />
+	
+	                    <ImageView
+	                        android:id="@+id/setting_imageview_musicdownloadpath"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentRight="true"
+	                        android:contentDescription="@string/setting_select"
+	                        android:src="@drawable/setting_leftselect" />
+	                </RelativeLayout>
+	            </LinearLayout>
+                -->
+
+                <TextView
+                    android:id="@+id/setting_textview_system"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:padding="4dp"
+                    android:text="@string/setting_system"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_content_color"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_versionupdate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_versionupdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_versionupdate" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_versionupdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_versionupdate"
+                            android:text="@string/setting_versionupdate"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_versionupdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_feedback"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/icn_feedback" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_feedback"
+                            android:text="@string/feedback"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+                    
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_aboutus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_aboutus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_aboutus" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_aboutus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_aboutus"
+                            android:text="@string/setting_aboutus"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_aboutus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_recommend"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_help"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/help_icon_open" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_help"
+                            android:text="@string/recommend"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+                    
+                    <!-- <RelativeLayout
+                        android:id="@+id/setting_layout_help"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_logo_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_help" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_logo_help"
+                            android:text="@string/tab_help"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout> -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_nickname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_icon_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_logo_usercall" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_icon_nickname"
+                            android:text="@string/setting_nickname"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+
+                        <TextView
+                            android:id="@+id/tv_nickname_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/setting_imageview_nickname"
+                            android:layout_toRightOf="@id/setting_textview_nickname"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="@string/setting_default_usercall"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_sign"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/setting_icon_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.16dp"
+                            android:contentDescription="@string/img_content_discription"
+                            android:src="@drawable/setting_icon_sign" />
+
+                        <TextView
+                            android:id="@+id/setting_textview_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.7dp"
+                            android:layout_toRightOf="@id/setting_icon_sign"
+                            android:text="@string/tab_login"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--
+	        <ImageView
+	            android:id="@+id/setting_voice_pic"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/setting_layout_background"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginBottom="-25dp"
+	            android:layout_marginTop="20dp"
+	            android:contentDescription="@string/talkicon"
+	            android:src="@drawable/icon_server_head" />
+	
+	        <ImageView
+	            android:id="@+id/camera_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@+id/other_layout_background"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginBottom="-30dp"
+	            android:layout_marginLeft="-50dp"
+	            android:layout_toRightOf="@id/setting_voice_pic"
+	            android:clickable="true"
+	            android:src="@drawable/settings_18" />
+            -->
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- <RelativeLayout
+        android:id="@+id/layout_help"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setting_title"
+        android:background="@color/bg_color"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ExpandableListView
+            android:id="@+id/help"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#2c2c2c"
+            android:divider="@color/view_color_setting"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:padding="5dp"
+            android:scrollbars="none" />
+    </RelativeLayout> -->
+
+</RelativeLayout>

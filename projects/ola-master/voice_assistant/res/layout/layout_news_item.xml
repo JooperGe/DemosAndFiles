@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/layout_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_index_margin_left"
+        	android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/title_secondary" 
+            android:text="标题"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        	android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_resource_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/title_secondary_text_margin_left_right"
+                android:text="@string/resource_lable"
+                android:textColor="@color/text_content_assist_color_2"
+                android:textSize="@dimen/title_third" />
+
+            <TextView
+                android:id="@+id/tv_resource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_resource_lable"
+                android:textColor="@color/text_content_assist_color_2"
+                android:textSize="@dimen/title_third" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_time"
+                android:text="@string/time_lable"
+                android:textColor="@color/text_content_assist_color_2"
+                android:textSize="@dimen/title_third" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/title_secondary_img_margin_left_right"
+                android:textColor="@color/text_content_assist_color_2"
+                android:textSize="@dimen/title_third"
+                android:text="2014-01-06" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_line" />
+
+        <ImageView
+            android:id="@+id/imgv_news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside" 
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_index_margin_left"
+            android:layout_marginRight="@dimen/title_secondary_img_margin_left_right"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_primary" 
+            android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

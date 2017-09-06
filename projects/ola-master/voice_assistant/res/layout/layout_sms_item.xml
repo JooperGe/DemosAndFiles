@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        style="@style/selection_index" 
+        android:layout_marginLeft="@dimen/content_index_margin_left"
+        android:layout_marginRight="@dimen/content_index_margin_right" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop= "@dimen/content_margin_top_and_bottom"
+        android:layout_marginBottom= "@dimen/content_margin_top_and_bottom">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小张"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_primary" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="5dp"
+            android:text="content"
+            android:singleLine="true"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_secondary" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_name"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:text="未读"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_secondary" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="08/23 8:00"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/content_secondary" />
+    </RelativeLayout>
+
+</LinearLayout>

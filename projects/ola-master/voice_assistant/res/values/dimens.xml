@@ -1,0 +1,183 @@
+<resources>
+
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="head_img_height">60dp</dimen>
+    <dimen name="head_img_width">60dp</dimen>
+    <dimen name="head_img_magin_top">30dip</dimen>
+    <dimen name="txt_size_content">14sp</dimen>
+    <dimen name="txt_btn_big_size">15sp</dimen>
+    <dimen name="txt_chat_size">16sp</dimen>
+    <dimen name="send_sms_content">16sp</dimen>
+    <dimen name="send_sms_btn">18sp</dimen>
+    <dimen name="send_sms_input_num">10sp</dimen>
+    <dimen name="send_sms_phone">16sp</dimen>
+    <dimen name="send_sms_name">16sp</dimen>
+    <dimen name="txt_calendar_title">15sp</dimen>
+    <dimen name="txt_calendar_des">12sp</dimen>
+    <dimen name="txt_calendar_date">11sp</dimen>
+    <dimen name="txt_weather_local_city">18sp</dimen>
+    <dimen name="txt_weather_local_time">18sp</dimen>
+    <dimen name="txt_weather_local_weather">13sp</dimen>
+    <dimen name="txt_weather_local_temperature">18sp</dimen>
+    <dimen name="txt_weather_local_pm">16sp</dimen>
+    <dimen name="txt_weather_date">12sp</dimen>
+    <dimen name="txt_weather_week">16sp</dimen>
+    <dimen name="layout_weather_width">40dp</dimen>
+    <dimen name="layout_weather_height">40dp</dimen>
+    <dimen name="txt_sina_weibo_title">15sp</dimen>
+    <dimen name="txt_sina_weibo_content">15sp</dimen>
+    <dimen name="txt_sina_weibo_user_info">16sp</dimen>
+    <dimen name="txt_sina_weibo_small">10sp</dimen>
+    <dimen name="txt_sina_weibo_time">10sp</dimen>
+    <dimen name="sina_weibo_head_height">48dp</dimen>
+    <dimen name="sina_weibo_head_width">48dp</dimen>
+    <dimen name="txt_music_title">17sp</dimen>
+    <dimen name="txt_music_des">13sp</dimen>
+    <dimen name="txt_call_record_title">15sp</dimen>
+    <dimen name="txt_call_record_content">13sp</dimen>
+    <dimen name="txt_call_num_content">15sp</dimen>
+    <dimen name="txt_poem_title">20sp</dimen>
+    <dimen name="txt_alarm_time">50sp</dimen>
+    <dimen name="txt_alarm_week">15sp</dimen>
+    <dimen name="txt_alarm_title">13sp</dimen>
+    <dimen name="txt_stock_title">20sp</dimen>
+    <dimen name="txt_stock_time">10sp</dimen>
+    <dimen name="txt_stock_lable">13sp</dimen>
+    <dimen name="txt_stock_num">13sp</dimen>
+    <dimen name="txt_stock_price">14sp</dimen>
+    <dimen name="txt_stock_rate">15sp</dimen>
+    <dimen name="txt_stock_percent">11sp</dimen>
+    <dimen name="txt_news_title">18sp</dimen>
+    <dimen name="txt_news_des">12sp</dimen>
+    <dimen name="txt_news_time">10sp</dimen>
+    <dimen name="txt_news_cotent">14sp</dimen>
+    <dimen name="txt_poem_author">15sp</dimen>
+    <dimen name="txt_poem_content">15sp</dimen>
+    <dimen name="txt_app_title">16sp</dimen>
+    <dimen name="txt_app_size">11sp</dimen>
+    <dimen name="txt_app_content">12sp</dimen>
+    <dimen name="txt_bluetooth_content">16sp</dimen>
+    <dimen name="shopping_item_height">90dp</dimen>
+    <dimen name="shopping_txt_title">16sp</dimen>
+    <dimen name="shopping_txt_price_cost">11sp</dimen>
+    <dimen name="shopping_txt_price">25sp</dimen>
+    <dimen name="shopping_txt_address">12sp</dimen>
+    <dimen name="video_txt_name">13sp</dimen>
+    <dimen name="selection_item_index">12sp</dimen>
+    <dimen name="hotel_txt_title">16sp</dimen>
+    <dimen name="hotel_txt_address">11sp</dimen>
+    <dimen name="hotel_txt_des">12sp</dimen>
+    <dimen name="hotel_txt_price">18sp</dimen>
+    <dimen name="hotel_txt_user_rating">13sp</dimen>
+    <dimen name="plane_txt_title">16sp</dimen>
+    <dimen name="plane_txt_content">14sp</dimen>
+    <dimen name="plane_txt_price"> 22sp</dimen>
+    <dimen name="plane_txt_rebate">11sp</dimen>
+    <dimen name="plane_txt_be_label">15sp</dimen>
+    <dimen name="plane_txt_time">14sp</dimen>
+    <dimen name="plane_txt_city">18sp</dimen>
+    <dimen name="sms_txt_name">18sp</dimen>
+    <dimen name="sms_txt_num">18sp</dimen>
+    <dimen name="sms_txt_content">15sp</dimen>
+    <dimen name="sms_txt_time">12sp</dimen>
+	<dimen name="contact_txt_name">15sp</dimen>
+	<dimen name="contact_txt_num">16sp</dimen>
+	<dimen name="poi_txt_title">16sp</dimen>
+	<dimen name="poi_txt_des">12sp</dimen>
+	<dimen name="poem_txt_title">16sp</dimen>
+	<dimen name="poem_txt_author">14sp</dimen>
+	<dimen name="login_txt_title">18sp</dimen>
+	<dimen name="login_txt_btn">15sp</dimen>
+	<dimen name="login_forget_pwd">15sp</dimen>
+	<dimen name="traffic_txt_title">15sp</dimen>
+	<dimen name="traffic_txt_des">13sp</dimen>	
+	<dimen name="traffic_txt_index">15sp</dimen>
+	<dimen name="bus_info_index_size">18sp</dimen>
+	<dimen name="bus_info_txt_size">15sp</dimen>
+	<dimen name="memo_txt_time">13sp</dimen>
+	<dimen name="memo_txt_content">15sp</dimen>
+	<dimen name="route_txt_content">15sp</dimen>
+	<dimen name="route_txt_distance">12sp</dimen>
+	<dimen name="main_item_left_form_margin_top">0dp</dimen>
+	<dimen name="main_item_left_form_margin_left">6.5dp</dimen>
+	<dimen name="main_item_left_form_margin_right">7dp</dimen>
+	<dimen name="main_item_left_chat_margin_right">6.5dp</dimen>
+	<dimen name="main_item_right_chat_margin_left">6.5dp</dimen>
+	<dimen name="main_item_right_edit_margin_left">10dp</dimen>
+	<dimen name="main_item_right_edit_margin_right">10dp</dimen>
+	<dimen name="main_item_left_chat_txt_padding_left">10dp</dimen>
+	<dimen name="main_item_left_chat_txt_padding_top">8dp</dimen>
+	<dimen name="main_item_left_chat_txt_padding_right">8dp</dimen>
+	<dimen name="main_item_left_chat_txt_padding_bottom">8dp</dimen>
+	<dimen name="main_item_right_chat_txt_padding_left">8dp</dimen>
+	<dimen name="main_item_right_chat_txt_padding_top">8dp</dimen>
+	<dimen name="main_item_right_chat_txt_padding_right">40dp</dimen>
+	<dimen name="main_item_right_chat_txt_padding_bottom">8dp</dimen>
+	<dimen name="main_item_edit_chat_txt_padding_top">8dp</dimen>
+	<dimen name="main_item_edit_chat_txt_padding_bottom">8dp</dimen>
+	<dimen name="main_item_edit_chat_txt_padding_right">15dp</dimen>
+	<dimen name="main_item_edit_chat_txt_padding_left">3dp</dimen>
+	<dimen name="main_listview_divider_height">10dp</dimen>
+	<dimen name="sdk_voice_btn_size">82dp</dimen>
+	
+	<dimen name="list_text_height">15sp</dimen>
+	<dimen name="content_primary_text_height">28sp</dimen>
+	<dimen name="content_second_text_height">12sp</dimen>
+	
+	
+	<!-- Font size  -->
+	<dimen name="title_primary">18sp</dimen>
+	<dimen name="title_secondary">15sp</dimen>
+	<dimen name="title_third">12sp</dimen>
+	<dimen name="content_primary">15sp</dimen>
+	<dimen name="content_secondary">12sp</dimen>
+	<dimen name="content_primary_number">28sp</dimen>
+	<dimen name="content_secondary_number_1">23sp</dimen>
+	<dimen name="content_secondary_number_2">12sp</dimen>
+	<dimen name="content_secondary_number_3">8sp</dimen>
+	<dimen name="text_dialog_box">16sp</dimen>
+	<dimen name="text_pull_down_menu">15sp</dimen>
+	<dimen name="button_primary">17sp</dimen>
+	
+	
+	<!-- Title Margin & Size -->
+	<dimen name="title_height">48dp</dimen>
+	<dimen name="title_primary_icon_size">21.3dp</dimen>
+    <dimen name="title_primary_two_icon_size">45dp</dimen>
+	<dimen name="title_secondary_icon_size">19.3dp</dimen>
+	
+	<dimen name="title_margin_border">13.3dp</dimen>
+	<dimen name="title_margin_between_filter_text_and_img">6.6dp</dimen>
+		
+	<dimen name="title_primary_img_margin_left">13.3dp</dimen>
+	<dimen name="title_primary_img_margin_right">16.6dp</dimen>
+	<dimen name="title_primary_img_margin_top_and_bottom">14dp</dimen>
+	<dimen name="title_primary_text_margin_top_and_bottom">15dp</dimen>
+	<dimen name="title_secondary_text_margin_top_and_bottom">17dp</dimen>
+	<dimen name="title_secondary_img_margin_top_and_bottom">17dp</dimen>
+	<dimen name="title_secondary_img_margin_left_right">13dp</dimen>
+	<dimen name="title_secondary_text_margin_left_right">15dp</dimen>
+	
+	<!-- Content Margin -->
+	<dimen name="content_index_margin_left">13dp</dimen>
+	<dimen name="content_index_margin_right">15dp</dimen>
+	<dimen name="content_margin_top_and_bottom">10dp</dimen>
+	
+	<dimen name="content_between_vertical">8dp</dimen>
+	<dimen name="whole_content_margin_right">13dp</dimen>
+
+		
+	<!-- Setting Text size -->
+	<dimen name="setting_title_text_size">20sp</dimen>
+	<dimen name="setting_description_text_size">15sp</dimen>
+	
+	
+	
+	<!--  -->
+	
+	
+	
+	
+</resources>

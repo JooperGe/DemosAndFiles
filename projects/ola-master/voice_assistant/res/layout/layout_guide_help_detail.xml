@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="12.8dp"
+    android:paddingRight="13.5dp"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/top_bar">
+        
+        <ImageView
+            android:id="@+id/imgv_title"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_marginTop="5dp"
+		    android:src="@drawable/icn_default" />
+         
+		<TextView
+		    android:id="@+id/imgv_title_bar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/imgv_title"		  
+		    android:layout_marginTop="15dp"
+		    android:layout_marginLeft="6.5dp"
+		    android:text="@string/u_can_ask_like_this"
+	        android:textColor="@color/black"
+	        android:textSize="20dp"/>
+    </RelativeLayout>
+    
+	<ListView
+        android:id="@+id/layout_content_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_help_content"
+        android:cacheColorHint="#00000000"
+        android:clickable="false"
+        android:footerDividersEnabled="false"
+        android:divider="@drawable/line_content"
+        android:listSelector="@drawable/list_item_bg_help_guide"
+        android:orientation="vertical" >
+     </ListView>
+
+</LinearLayout>

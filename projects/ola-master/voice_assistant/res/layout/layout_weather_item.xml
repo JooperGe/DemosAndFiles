@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/imgv_history"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_weather00"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/img_content_discription" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="25dp" >
+         
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/weather_txt"
+            android:textSize="@dimen/content_secondary"
+            android:text="01/26" />
+                
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_alignLeft="@id/tv_date"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/weather_txt"
+            android:textSize="@dimen/content_secondary"
+            android:text="周二" 
+            />
+        
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_week"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/tv_date"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/weather_txt"
+            android:textSize="@dimen/content_secondary"
+            android:text="晴转多云" 
+            />
+      
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"            
+            android:layout_toLeftOf="@+id/tv_pm"           
+            android:layout_marginTop="2dp"            
+            android:textColor="@color/weather_txt"
+            android:textSize="@dimen/content_secondary"
+            android:text="10~15度" />
+        
+        <TextView
+            android:id="@+id/tv_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/whole_content_margin_right"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/weather_txt"
+            android:textSize="@dimen/content_secondary"            
+            android:text="PM2.5(256)" />
+        
+    </RelativeLayout>
+</LinearLayout>

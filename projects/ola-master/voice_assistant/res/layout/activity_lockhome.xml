@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customSwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_content_color"
+    android:fillViewport="true"
+    android:gravity="top|center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/back"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/setting_tipsmessage_lockhome"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/setting_title_text_size" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_title"
+        android:layout_marginTop="20dp"
+        android:background="@color/setting_content_color"
+        android:fillViewport="true"
+       
+        android:gravity="top|center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/other_layout_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_content_color"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_lockhome_oneStep"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/setting_textview_lockhome_oneStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="19.2dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/lockhome_oneStep"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_lockhome_oneStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/view_color_setting" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_layout_lockhome_twoStep"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/list_item_bg_setting"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/setting_textview_lockhome_twoStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="19.2dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/lockhome_twoStep"
+                            android:textColor="@color/setting_text_color"
+                            android:textSize="18.6sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_imageview_lockhome_twoStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16.16dp"
+                            android:contentDescription="@string/setting_select"
+                            android:src="@drawable/icons_go_58" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

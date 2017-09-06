@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_bg" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        style="@style/selection_index"       
+        android:layout_marginLeft="@dimen/content_index_margin_left"
+        android:layout_gravity="center"
+        />
+  
+
+    <ImageView
+        android:id="@+id/imgv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_phone_call" />
+    
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_secondary_img_margin_left_right"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:layout_weight="1"
+        android:textColor="@color/list_item_text" />
+
+    <ImageView
+        android:id="@+id/imgv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+		android:layout_gravity="center"
+		android:layout_marginRight="10dp"
+        android:src="@drawable/icons_call" />
+
+</LinearLayout>

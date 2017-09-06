@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">哦啦语音助手</string>
+    <string name="teststring">哦啦语音</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_othersettings">其它设置</string>
+    <string name="menu_dump">保存当前对话</string>
+    <string name="title_activity_main">哦啦语音助手</string>
+    <string name="app_id_1">4fb3093f</string>
+    <string name="app_id">4f595817</string>
+    <string name="capture_voice">我要说话</string>
+    <string name="settings">设置</string>
+    <string name="othersettings">其它设置</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="select">选择</string>
+    <string name="connect_failed">服务器连接失败!</string>
+    <string name="server_dataerror">您的网络似乎不太理想啊！</string>
+    <string name="connected_to">已连接到</string>
+    <string name="connected">已连接到服务器。</string>
+    <string name="connecting">正在连接服务器。</string>
+    <string name="recognize_failed">无法识别结果</string>
+    <string name="send_sms_failed">给%1$s发送短信失败！</string>
+    <string name="send_sms_success">给%1$s发送短信成功！</string>
+    <string name="server_ip">服务器IP地址</string>
+    <string name="server_port">服务器端口号</string>
+    <string name="auto_start_record">智能开启语音功能</string>
+    <string name="voice_wakeup">语音唤醒功能</string>
+    <string name="use_internet_server">外网服务器</string>
+    <string name="use_intranet_server">内网服务器</string>
+    <string name="use_custom_server">自定义IP</string>
+    <string name="use_http_server">http连接方式 </string>
+    <string name="use_socket_server">Socket连接方式 </string>
+    <string name="save_file_in">文件保存在：</string>
+    <string name="save_file_failed">文件保存失败</string>
+    <string name="tab_main">主页</string>
+    <string name="tab_voice">语音助手</string>
+    <string name="tab_help">帮助</string>
+    <string name="tab_login">登录</string>
+    <string name="tab_register">注册</string>
+    <string name="tab_exit_login">退出登录</string>
+    <string name="display_floatview">悬浮视窗</string>
+    <string name="send">发送</string>
+    <string name="background">背景</string>
+    <string name="talkicon">对话图示</string>
+    <string name="setting_basicsetting">基础设置</string>
+    <string name="setting_switch">选择</string>
+    <string name="setting_select">选择图示</string>
+    <string name="setting_ttsvoicesetting">语音播报</string>
+    <string name="setting_voicesetting">语音设置</string>
+    <string name="setting_voicetype">朗读人声</string>
+	<string name="setting_voicetype_vadio">语音设置</string>
+    <string name="setting_musicsetting">音乐设置</string>
+    <string name="setting_system">系统</string>
+    <string name="setting_versionupdate">版本更新</string>
+    <string name="setting_aboutus">联系我们</string>
+    <string name="setting_searchonlinemusic">搜索在线音乐</string>
+    <string name="setting_listenandsave">边听边存</string>
+    <string name="setting_musicdownloadpath">默认下载路径</string>
+    <string name="setting_selectpic">选择图片</string>
+    <string name="setting_usercall">称呼设置</string>
+    <string name="setting_prompt">提示</string>
+    <string name="setting_map">地图设置</string>
+    <string name="setting_map_display">显示设置</string>
+    <string name="setting_map_traveltype">乘车偏好</string>
+    <string name="setting_map_traffic">实际路况</string>
+    <string name="setting_default_usercall">主人</string>
+    <string name="centigrade">℃</string>
+    <string name="weather">Weather</string>
+    <string name="stock_price_start_lable">开　盘</string>
+    <string name="stock_price_start_lable2">开盘价</string>
+    <string name="stock_price_high_lable">最　高</string>
+    <string name="stock_price_low_lable">最　低</string>
+    <string name="stock_volume_lable">成交量</string>
+    <string name="stock_turnover_lable">换手率</string>
+    <string name="stock_amount_lable">成交额</string>
+    <string name="stock_price_end_lable">昨收价</string>
+    <string name="msg_deleted_all_data">当前数据已被删除！</string>
+    <string name="weibo_attention">关注</string>
+    <string name="weibo_funs">粉丝</string>
+    <string name="weibo_num">微博</string>
+    <string name="download">下载</string>
+    <string name="img_content_discription">image</string>
+    <string name="music_the_player_is_closed">当前播放器已关闭</string>
+    <string name="music_play_fail">播放失败</string>
+    <string name="music_download_fail">歌曲下载失败，自动跳到下一首。</string>
+    <string name="music_is_last_music">已经是第一首歌了</string>
+    <string name="music_last_song">已经是最后一首了</string>
+    <string name="music_list_is_null">播放列表为空</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="back">返回</string>
+    <string name="done">完成</string>
+    <string name="login_username_hint">用户名</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_phone_hint">手机号码</string>
+    <string name="login_user_login">用户登录</string>
+    <string name="login_please_input_username">请输入用户名</string>
+    <string name="login_please_input_password">请输入密码</string>
+    <string name="login_username_to_long_alert">请输入有效的用户名</string>
+    <string name="login_exit">退出登录</string>
+    <string name="login_forget_pwd">忘记密码？</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="login_why_register">为什么要注册？</string>
+    <string name="register_cause">注册有很多好处哦</string>
+    <string name="get_identifying_code">获取验证码</string>
+    <string name="repeat_identifying_code">重发验证码</string>
+    <string name="submit_identifying_code">提交验证码</string>
+    <string name="forgetpwd_please_input_newpwd">请输入新密码</string>
+    <string name="forgetpwd_please_input_code">请输入验证码</string>
+    <string name="forgetpwd_please_input_newpwd_again">再次输入新密码</string>
+    <string name="register_username_is_null_alert">请输入用户名</string>
+    <string name="register_password_is_null_alert">请输入密码</string>
+    <string name="register_fail_plaease_try_again">注册失败，请重试。</string>
+    <string name="register_pwd_again">再次输入密码</string>
+    <string name="register_user_email">用户邮箱</string>
+    <string name="register_username_length_alert">用户名6~15个字符</string>
+    <string name="register_password_length_alert">密码6~15个字符</string>
+    <string name="register_username_wrongful">用户名只能由字母、数字、下划线组成，且以字母开头的6~15个字符</string>
+    <string name="register_phone_wrongful">请输入 正确的手机号码</string>
+    <string name="register_password_unlike">两次密码不一致</string>
+    <string name="register_email_wrongful">邮箱格式不正确</string>
+    <string name="register_email_is_null">请输入邮箱</string>
+    <string name="user_register">用户注册</string>
+    <string name="account_center">账户中心</string>
+    <string name="account_identified">已验证</string>
+    <string name="account_not_identify">未验证</string>
+    <string name="account_obtain_identify_status">状态获取中&#8230;</string>
+    <string name="account_wait_user_to_identifying">等待用户验证</string>
+    <string name="phone_identifying">手机号验证</string>
+    <string name="phone_change">更换手机号</string>
+    <string name="phone_number">手机号</string>
+    <string name="phone_please_input_phone">请输入手机号</string>
+    <string name="phone_number_colon">手机号：</string>
+    <string name="phone_please_input_new_phone">请输入新的手机号</string>
+    <string name="phone_code_send_ok">验证码已发送，请注意查收，1分钟后未收到请重试</string>
+    <string name="phone_id_pwd_not_matched">用户名与密码不匹配</string>
+    <string name="phone_code_input_error">验证码输入有误，请检查后重新输入</string>
+    <string name="phone_code_submit_failure">验证码提交失败</string>
+    <string name="phone_bind_ok">手机号已成功验证</string>
+    <string name="new_phone_bind_ok">新的手机号已绑定成功</string>
+    <string name="setting_nickname">昵称设置</string>
+    <string name="submit_modify">提交修改</string>
+    <string name="nickname_submit_ok">您的用户昵称已成功修改</string>
+    <string name="nickname_toolong">昵称长度不能多于15个字符</string>
+    <string name="account_phone_not_matched">账户和手机号未绑定或不匹配</string>
+    <string name="pwd_modify_ok">您的密码已经修改成功，请重新登录</string>
+    <string name="phone_input_error">手机号输入有误，请检查后重新输入</string>
+    <string name="reset_pwd_failed">密码修改失败，请重新操作</string>
+    <string name="str_coupon">优惠券</string>
+    <string name="str_app">应用推荐</string>
+    <string name="new_phone_same_as_old">新的手机号和目前绑定的手机号一样，请重新输入</string>
+    <string name="phone_code_interval_less_than_60s">验证码发送间隔时间小于60秒</string>
+    <string name="phone_binded_please_input_other">此手机号已被绑定，请输入其他手机号</string>
+    <string name="pwd_error_please_input_again">密码错误，请重新输入</string>
+    <string name="account_authentication">账户验证</string>
+    <string name="lets_go_authentication">马上去验证</string>
+    <string name="account_not_bind_phone">您的账号尚未绑定手机号</string>
+    <string name="nickname_wrongful">昵称只能由字母、数字、中文线组成。</string>
+    <string name="exit_please_again">再按一次退出哦啦语音</string>
+    <string name="pack_up">收起</string>
+    <string name="all">全部</string>
+    <string name="music_add_download_list">已加入下载列表！</string>
+    <string name="call_record">通话记录</string>
+    <string name="resource_lable">来源:</string>
+    <string name="time_lable">时间:</string>
+    <string name="select_phone_num">选择号码</string>
+    <string name="downloading">下载中</string>
+    <string name="downloading2">下载中&#8230;</string>
+    <string name="blue_connected">已配对</string>
+    <string name="blue_disconnected">未配对</string>
+    <string name="hotel_grade">分</string>
+    <string name="version_info">版本信息</string>
+    <string name="software_type">软件类型:</string>
+    <string name="software_classification">所属分类:</string>
+    <string name="software_version">软件版本:</string>
+    <string name="update_time">更新时间:</string>
+    <string name="system_requirement">系统要求:</string>
+    <string name="check_update">检查更新</string>
+    <string name="contact_us">联系我们</string>
+    <string name="official_website">官网:</string>
+    <string name="customer_service">客服:</string>
+    <string name="free">免费</string>
+    <string name="convenience_of_life">便捷生活</string>
+    <string name="need_version">Android2.2版本以上</string>
+    <string name="unknow">未知</string>
+    <string name="rebate">折</string>
+    <string name="one_plus">1+</string>
+    <string name="minute">分</string>
+    <string name="hour">时</string>
+    <string name="day">天</string>
+    <string name="meter">米</string>
+    <string name="kilometer">千米</string>
+    <string name="alert">提示！</string>
+    <string name="exit_message">您确定要退出吗？</string>
+    <string name="login_success">登录成功！</string>
+    <string name="login_fail">登录失败！</string>
+    <string name="login_loading_title">正在登录</string>
+    <string name="login_loading_message">登录中，请稍候&#8230;</string>
+    <string name="register_loading_title">正在注册</string>
+    <string name="register_loading_message">正在提交注册信息，请稍候&#8230;</string>
+    <string name="register_fail">注册失败！</string>
+    <string name="register_success">注册成功！</string>
+    <string name="register_username_disabled">用户名已存在！</string>
+    <string name="register_license_title">哦啦注册协议</string>
+    <string name="register_license_ok">我知道了</string>
+    <string name="register_license_not_agree">请先阅读并同意用户协议</string>
+    <string name="click_to_download">请点击下载</string>
+    <string name="poi_telephone_lable">电话：</string>
+    <string name="poi_telephone_empty">无</string>
+    <string name="from_lable">来自：</string>
+    <string name="route_location_begin_label">出发地：</string>
+    <string name="route_location_end_label">目的地：</string>
+    <string name="route_location_local">当前位置</string>
+    <string name="sms_send">发出</string>
+    <string name="sms_unread">未读</string>
+    <string name="sms_read">已读</string>
+    <string name="poi_no_detail">没有详细信息</string>
+    <string name="save">保存</string>
+    <string name="close">关闭</string>
+    <string name="setting_tipsmessage_lock">锁屏功能</string>
+    <string name="setting_tipsmessage_lockhome">锁定HOME键</string>
+    <string name="setting_basicsetting_unlock">未锁定</string>
+    <string name="setting_basicsetting_lock">已锁定</string>
+    <string name="setting_basicsetting_unstart">未开启</string>
+    <string name="setting_basicsetting_start">已开启</string>
+    <string name="setting_tipsmessage_colselock">关闭系统锁屏</string>
+    <string name="setting_tipsmessage_colsethree">关闭第三方系统锁屏</string>
+    <string name="lockhome_tip">为防止屏幕锁定时，按HOME键会解锁，请进行如下设置：</string>
+    <string name="closelock_tip">设置"锁屏设置-无" 防止出现双锁屏</string>
+    <string name="closethree_tip">防止多次解锁</string>
+    <string name="homelock_tip">防止Home键直接跳过语音锁屏</string>
+    <string name="lockhome_title">锁屏设置</string>
+    <string name="lockhome_oneStep">第一步：请消除默认设置</string>
+    <string name="lockhome_firststep">第一步</string>
+    <string name="lockhome_firststeptips">点击"清除默认设置"按钮，如下图：</string>
+    <string name="lockhome_stepbtn">马上去操作</string>
+    <string name="lockhome_twoStep">第二步：请选择语音锁屏</string>
+    <string name="lockhome_secondstep">第二步</string>
+    <string name="lockhome_secondsteptips">选择哦啦语音，并且点击始终，如下图：</string>
+    <string name="lockhome_threeStep">第三步：请选择默认桌面</string>
+    <string name="bluetooth_searching_title">正在搜索</string>
+    <string name="bluetooth_searching_message">搜索中，请稍候&#8230;</string>
+    <string name="newassistactivity_take_pic_succ">拍照成功,图片位于：</string>
+    <string name="newassistactivity_take_pic_fail">拍照失败</string>
+    <string name="newassistactivity_can_not_find">找不到</string>
+    <string name="newassistactivity_no_sd_card">没有 SD-Card</string>
+    <string name="newassistactivity_sd_card_not_exist">SD card 尚未挂载！</string>
+    <string name="newassistactivity_can_not_open">无法开启</string>
+    <string name="newassistactivity_can_not_find_path">无法找到路径</string>
+    <string name="newassistactivity_can_not_get_details_temp">暂时无法查看详细信息</string>
+    <string name="newassistactivity_can_not_find_bus_info">没有找到公交的地图信息</string>
+    <string name="voiceassistantservice_vr_error_1">您好像没有说话哦!</string>
+    <string name="voiceassistantservice_vr_error_2">麦克风被抢占，请清理其他录音设备或应用后重试！</string>
+    <string name="voiceassistantservice_please_say">请先说：</string>
+    <string name="voiceassistantservice_server_data_error">您的网络似乎不太理想啊！</string>
+    <string name="voiceassistantservice_can_not_play">无法播放!</string>
+    <string name="voiceassistantservice_no_qvodplayer">没有找到快播播放器，请安装！</string>
+    <string name="voiceassistantservice_idle_star1">周杰论</string>
+    <string name="voiceassistantservice_idle_star2">刘德华</string>
+    <string name="voiceassistantservice_ola">哦啦</string>
+    <string name="voiceassistantservice_ola_nick">凹啦</string>
+    <string name="top_voice_button_title">语音输入按钮</string>
+    <string name="top_voice_button_desc">切换语音输入按钮的显示和隐藏</string>
+    <string name="exchange">兑换</string>
+    <string name="exchange_rate">汇率</string>
+    <string name="incoming_call">来电话了,来电话了,请说接听还是挂断？</string>
+    <string name="incoming_call_to_you">给您来电话了,请说接听还是挂断？</string>
+    <string name="incoming_call_auto_answer_for_you">正在为您接听</string>
+    <string name="incoming_call_answer_by_manual">识别失败，请手动操作</string>
+    <string name="incoming_call_not_support_answer_by_manual">您的系统不支持语音接听，请手动操作</string>
+    <string name="setting_tips">提示信息</string>
+    <string name="setting_help_tips">帮助信息提示</string>
+    <string name="setting_network_tips">2G/3G网络提示</string>
+    <string name="warning">警告</string>
+    <string name="network_warning">您当前使用的不是wifi网络，你的操作将会产生流量费用，是否继续？</string>
+    <string name="encyclopedia">百科</string>
+    <string name="setting_remind_sms_incoming_call">短信来电播报设置</string>
+    <string name="setting_remind_incoming_call">来电播报设置</string>
+    <string name="setting_auto_remind_incoming_call">自动播报来电</string>
+    <string name="setting_auto_remind_incoming_call_name">自动播报来电人名或号码</string>
+    <string name="setting_remind_sms">短信播报设置</string>
+    <string name="setting_auto_remind_sms">自动播报短信</string>
+    <string name="setting_auto_remind_sms_name_or_number">自动播报来信人名或号码</string>
+    <string name="setting_auto_remind_sms_content">自动播报短信内容</string>
+    <string name="dialog_continue">继续</string>
+    <string name="setting_remind_incoming_call_prompt">由于系统限制，部分机型无法通过语音接听电话，请手动操作！</string>
+    <string name="setting_remind_sm_prompt">由于系统限制，部分机型无法支持短信播报，请手动操作！</string>
+    <string name="setting_close_third_party_lockscreen">关闭第三方锁屏</string>
+    <string name="setting_close_third_party_lockscreen_description">为防止出现多次锁屏，请关闭其他锁屏，进入下列程序，在程序的设置中取消锁屏。</string>
+    <string name="setting_close_third_party_app_description">关闭此款锁屏</string>
+    <string name="sms_auto_remind">您有一条新的短信。</string>
+    <string name="sms_auto_remind_with_name_and_content">给您发短信了。</string>
+    <string name="sms_auto_remind_end">。您可以说播报或回复.</string>
+    <string name="sms_auto_remind_content_head">内容为：</string>
+    <string name="sms_auto_remind_unknown_sender">未知号码</string>
+    <string name="lockscreen_wait_vr">短信播报中，请解锁或稍后进行语音操作。</string>
+    <string name="lockscreen_please_say">请开始说话</string>
+    <string name="otherbaike_show_details">&#8230;[展开详情]</string>
+    <string name="otherbaike_pack_up_details">[收起详情]</string>
+    <string name="businfo_early_bus">早班车：</string>
+    <string name="businfo_last_bus">末班车：</string>
+    <string name="businfo_mileage">全程共</string>
+    <string name="businfo_show_map">（点击查看地图）</string>
+    <string name="bluetooth_title">蓝牙</string>
+    <string name="bluetooth_new_search">重新搜索</string>
+    <string name="bluetooth_searching">搜索蓝牙</string>
+    <string name="memo">备忘录</string>
+    <string name="navigation">导航</string>
+    <string name="news">新闻</string>
+    <string name="all_news">全部新闻</string>
+    <string name="bus">公交</string>
+    <string name="calendar_remind">日历提醒</string>
+    <string name="delete_all">删除全部</string>
+    <string name="poi_title">周边</string>
+    <string name="default_sort">默认排序</string>
+    <string name="apart">相距:</string>
+    <string name="unknown">未知</string>
+    <string name="phone_book">通讯录</string>
+ 	<string name="voice_radio_setting">语音设置</string>
+    <string name="voice_setting_basic_setting">基础设置</string>
+    <string name="crash_toast">程序异常退出</string>
+    <string name="u_can_ask_like_this">你可以这样问我</string>
+    <string name="recommend">应用推荐</string>
+    <string name="feedback">意见反馈</string>
+    <string name="your_address">联系方式(如方便,请填写)</string>
+    <string name="alarm_klaxon_service_desc">"在 DeskClock 中设置的闹钟铃声播放服务。"</string>
+    <string name="setting_floatview_ondesk">桌面小插件</string>
+    <string name="floatview_guide">戳这里，有惊喜，使用哦啦所有功能更爽快，还可以直接打电话，快来试试吧！</string>
+    
+    <string-array name="voiceTypeSetting">
+        <item>科大讯飞</item>
+        <item>云知声</item>
+    </string-array>
+
+    <string-array name="displaytypename">
+        <item>百度</item>
+    </string-array>
+    <string-array name="traveltypename">
+        <item>地铁</item>
+        <item>打车</item>
+        <item>步行</item>
+    </string-array>
+    <string-array name="voicetypename">
+        <item>晓燕 女声 普通话</item>
+        <item>晓倩 女声 东北话</item>
+        <item>晓蓉 女声 四川话</item>
+        <item>晓美 女声 广东话</item>
+        <item>晓琳 女声 台湾话</item>
+        <item>小强 男声 湖南话</item>
+        <item>小坤 男声 河南话</item>
+        <item>许久 男声 普通话</item>
+        <item>许多 男声 普通话</item>
+        <item>晓萍 女声 普通话</item>
+        <item>唐老鸭 卡通人物 普通话</item>
+        <item>许小宝 童声 普通话</item>
+        <item>大龙 男声 广东话</item>
+    </string-array>
+    <string-array name="helptitle">
+        <item>生活周边</item>
+        <item>音乐</item>
+        <item>天气</item>
+        <item>百科</item>
+        <item>视频</item>
+        <item>电话</item>
+        <item>短信</item>       
+        <item>通讯录</item>
+        <item>应用</item>
+        <item>日历</item>
+        <item>节目预告</item> 
+        <item>新闻</item>
+        <item>诗词</item>
+        <item>笑话</item>
+        <item>聊天</item>
+        <item>手机设置</item>
+        <item>闹钟</item>
+        <item>导航</item>    
+        <item>提醒</item>
+        <item>备忘</item>
+        <item>股票</item>
+        <item>酒店</item>
+        <item>火车票</item>
+        <item>机票</item>
+        <item>购物</item>
+        <item>计算</item>
+        <item>单位换算</item>
+        <item>汇率换算</item>
+        <item>24点</item>
+        <item>公交</item>   
+        <item>搜索</item>       
+        <!-- <item>微博</item> -->     
+    </string-array>   
+    <string-array name="helpdescription">        
+        <item>找美食，问线路，有问必答</item>
+        <item>智能语音点播，可以收藏歌曲到播放列表，支持歌名、专辑、歌手点歌,更有歌手名加歌名的精确点歌方式，不想听还能语音关闭音乐播放器</item>
+        <item>询问天气预报，可以连续问</item>
+        <item>查询百科</item>
+        <item>支持在线看视频播放</item>
+        <item>支持智能识别关系人，支持回拨未接电话，直拨多个号码的联系人其中的一个号</item>
+        <item>可以发短信给关系人比如爸爸、妈妈、哥哥、姐姐等</item>                
+        <item>全面的通讯录功能，支持查看、添加联系人，还可以设立与联系人的关系</item>
+        <item>想做什么就说什么，支持打开本地应用，登陆网站</item>              
+        <item>支持公历农历查询换算，节气、节日的公历农历查询，时间查询</item>
+        <item>支持查看国内各大电视台及卫视的节目预告</item>
+        <item>支持热门、娱乐、体育、科技、军事、财经新闻</item>
+        <item>支持听诗歌朗诵，查询诗作者，说诗句答诗名，说上句答下句</item>
+        <item>慎入，否则笑得肚子疼！ </item>
+        <item>谈谈情，聊聊天，快来调戏偶吧</item>
+        <item>用语音来控制手机设置</item>
+        <item>支持查看、添加、删除、修改闹钟</item>
+        <item>查询公交线路、自驾导航，出行好帮手</item>
+        <item>支持添加、取消、修改、查看日程， 可智能识别时间段</item>
+        <item>支持查看、添加、备忘，还能记QQ密码哦</item>
+        <item>除了常规的行情查询方式，还有简称查询和自选股的收藏与查询哟</item>
+        <item>智能筛选酒店，出行好帮手，支持关键字：酒店名，入住时间，星级，宽带，停车场，游泳池，机场班车，健身房，含早餐，家庭房，接送服务等</item>
+        <item>可查询火车票，支持硬座，硬卧，软卧，一等软座，二等软座，动车，高速动车，特快等关键字</item>
+        <item>可查询、预定飞机票，支持头等，商务，经济等关键字</item>
+        <item>网上购物，动动嘴就帮你挑</item>
+        <item>支持常用的数学计算，算不出就问我吧</item>
+        <item>支持常用国际单位的换算</item>
+        <item>提供常见国家货币的汇率换算</item>
+        <item>24点，你敢不敢比我更快</item>
+        <item>查询您身边的公交站点和公交线路</item>
+        <item>搜索你想搜索的</item>
+        <!-- <item>什么？你没有？赶紧去申请一个吧，目前支持发微博，加评论，@好友（新浪微博客户端要3.0以上）</item>  -->
+    </string-array>
+    <string-array name="help_child_contact">
+        <item>11添加联系人。</item>
+        <item>21小李的号码是多少。</item>
+        <item>31小李的家庭地址是中山公园。</item>
+        <item>32小李的号码是12345678901。</item>
+    </string-array>
+    <string-array name="help_child_phone">
+        <item>11打电话给小李。</item>
+        <item>21打小李的住宅电话。</item>
+        <item>31回刚才的来电。</item>
+    </string-array>
+    <string-array name="help_child_sms">
+        <item>11查看短信。</item>
+        <item>12昨天的短信。</item>
+        <item>21发短信给小张。</item>
+        <item>31发短信给小张告诉他我今晚8点回家。</item>
+        <item>41把小张的电话发给小李。</item>
+    </string-array>
+    <string-array name="help_child_calendar">
+        <item>11现在是几点？</item>
+        <item>21今年除夕是几号？</item>
+        <item>31圣诞节是农历几号？</item>
+        <item>41小暑是农历几号？</item>
+        <item>51上周三是几号？</item>
+    </string-array>
+    <string-array name="help_child_remind">
+        <item>11提醒我下午三点开会。</item>
+        <item>21查看下午一点到六点的日程。</item>
+        <item>31修改今天的日程。</item>
+        <item>41我要取消日程。</item>
+        <item>51取消下午1点到4点半的日程。</item>
+    </string-array>
+    <string-array name="help_child_note">
+        <item>11新建备忘录。</item>
+        <item>21查看备忘录。</item>
+        <item>31帮我添加一个晚上和张杰一起吃饭的备忘。</item>
+        <item>41帮我记一下我的QQ密码是123。</item>
+    </string-array>
+    <string-array name="help_child_clock">
+        <item>11工作日早上7点提醒我起床。</item>
+        <item>21查看所有闹钟。</item>
+        <item>31第一个闹钟的时间改为下午三点。</item>
+        <item>41删除早上七点的闹钟。</item>
+        <item>51早上七点喊醒我。</item>
+    </string-array>
+    <string-array name="help_child_open">
+        <item>11打开微信。</item>
+        <item>21我要玩保卫萝卜。</item>
+        <item>31下载捕鱼达人。</item>
+        <item>41我要拍照。</item>
+        <item>51看照片。</item>
+    </string-array>
+    <string-array name="help_child_joke">
+        <item>1我想听个笑话。</item>
+        <item>21给我讲个笑话。</item>
+        <item>31来一个好笑的段子。</item>
+    </string-array>
+    <string-array name="help_child_setting">
+        <item>11打开蓝牙。</item>
+        <item>21调节屏幕亮度。</item>
+        <item>31静音模式。</item>
+        <item>41关闭静音模式。</item>
+        <item>51振动模式。</item>
+    </string-array>
+    <string-array name="help_child_music">
+        <item>11听音乐。</item>
+        <item>21听忘情水。</item>
+        <item>31最近的热门歌曲。</item>
+        <item>32我要听刘德华的忘情水。</item>
+        <item>33梁静茹的专辑。</item>
+    </string-array>
+    <string-array name="help_child_video">
+        <item>11我要看爸爸去哪儿。</item>
+        <item>21放郭敬明导演的电影。</item>
+        <item>31有什么好看的喜剧片。</item>
+    </string-array>
+    <string-array name="help_child_poem">
+        <item>11我要听诗。</item>
+        <item>21白居易的长恨歌。</item>
+        <item>31望庐山瀑布的作者。</item>
+        <item>41朗诵诗歌望庐山瀑布。</item>
+        <item>51才下眉头却上心头的诗名是什么？</item>
+        <item>61床前明月光的下句是？</item>
+    </string-array>
+    <string-array name="help_child_news">
+        <item>11热门新闻。</item>
+        <item>21听财经新闻。</item>
+        <item>3听国际的新闻。</item>
+        <item>41今天有什么新闻？</item>
+        <item>51有娱乐相关报道吗？</item>
+    </string-array>
+    <string-array name="help_child_weather">
+        <item>11明天的天气。</item>
+        <item>21空气质量怎么样。</item>
+        <item>31这周的天气。</item>
+    </string-array>
+    <string-array name="help_child_search">
+        <item>11你会不会搜索？</item>
+        <item>21我要看杨幂的照片。</item>
+        <item>31百度奥巴马。</item>
+        <item>41搜狗赵本山。</item>
+        <item>51帮我搜索钓鱼岛的历史。</item>
+    </string-array>
+    <string-array name="help_child_wiki">
+        <item>11郭敬明到底有多高。</item>
+        <item>21中国四大名旦。</item>
+        <item>31夏季皮肤如何补水。</item>
+        <item>41秦朝是啥时候建立的。</item>
+    </string-array>
+    <string-array name="help_child_ask">
+        <item>11帮我问个问题吧。</item>
+        <item>122013年流行什么发型。</item>
+        <item>21帮我去问一下。</item>
+        <item>22吃水果能减肥吗？</item>
+        <item>31我的问题有答案了吗？</item>
+        <item>41流行什么发型那个问题有答案了吗？</item>
+    </string-array>
+    <string-array name="help_child_weibo">
+        <item>11我要发微博。</item>
+        <item>21看姚晨的微博。</item>
+        <item>22加评论。</item>
+        <item>31发微博：你好吗？爱特（@）李开复。</item>
+        <item>41我的微博。</item>
+        <item>51登录我的新浪微博。</item>
+    </string-array>
+    <string-array name="help_child_poi">
+        <item>11人民广场附近的川菜馆。</item>
+        <item>21附近的肯德基。</item>
+        <item>31我要健身。</item>
+        <item>32我要吃烧烤。</item>
+        <item>41离我最近的厕所。</item>
+    </string-array>
+    <string-array name="help_child_route">
+        <item>11导航去外滩。</item>
+        <item>21怎么开车去人民广场。</item>
+        <item>22导航去小李的家。</item>
+    </string-array>
+    <string-array name="help_child_stock">
+        <item>11中国石油的行情。</item>
+        <item>21中石油的价格。</item>
+        <item>31600315现在什么价格？</item>
+        <item>41我的自选股。</item>
+    </string-array>
+    <string-array name="help_child_booking_train">
+        <item>11帮我查一下到西安的软卧。</item>
+        <item>21查10月1号(时间大于今天)去杭州的硬座。</item>
+        <item>31我要查有没有周六去北京的动车票。</item>
+        <item>41查看石家庄去太原的特快。</item>
+    </string-array>
+    <string-array name="help_child_booking_air">
+        <item>11帮我订张到西安的机票。</item>
+        <item>21订10月1号(时间大于今天)去广州的经济舱。</item>
+        <item>31周六到北京的头等舱。</item>
+        <item>41上海去太原的航班。</item>
+    </string-array>
+    <string-array name="help_child_booking_hotel">
+        <item>11帮我在希尔顿预定一个房间。</item>
+        <item>21在虹桥机场附近订一个房间。</item>
+        <item>31预定附近500元左右的酒店。</item>
+        <item>41给我在广州订一间4星级酒店，4月5号入住，要有机场班车。</item>
+    </string-array>
+    <string-array name="help_child_buy">
+        <item>11我要网购。</item>
+        <item>21想买3000元以内的手机。</item>
+        <item>31推荐我5000元左右的笔记本。</item>
+    </string-array>
+    <string-array name="help_child_compute">
+        <item>11我要算1加2乘以10等于多少？</item>
+        <item>214.1加上2.94等于几？</item>
+        <item>312的3次方是多少？</item>
+        <item>41四的平方根是多少？</item>
+        <item>51负的2.35的平方等于几？</item>
+        <item>6110的对数等于多少？</item>
+    </string-array>
+    <string-array name="help_child_unit">
+        <item>113米等于多少码？</item>
+        <item>21告诉我2公顷等于多少公亩？</item>
+        <item>31算算5克等于多少克拉？</item>
+        <item>41算一下9立方英尺相当于多少立方米？</item>
+        <item>51你知道一周相当于多少小时吗？</item>
+    </string-array>
+    <string-array name="help_child_24">
+        <item>11你会算24点吗？</item>
+        <item>21帮我算24点。</item>
+        <item>31算24点1,3,5,7。</item>
+        <item>411,3,5,7怎么算24点？</item>
+        <item>511,3,5,7帮我算24点。</item>
+    </string-array>
+    <string-array name="help_child_funny">
+        <item>11你会什么？</item>
+        <item>21你多大了？</item>
+        <item>31你是男是女？</item>
+        <item>32你喜欢哪个星座。</item>
+    </string-array>
+    <string-array name="help_child_exchangerate">
+        <item>11泰国的货币是什么？</item>
+        <item>21美元兑换人民币的汇率。</item>
+        <item>31欧元的汇率。</item>
+        <item>41一千人民币能换多少澳元？</item>
+    </string-array>
+    <string-array name="help_child_businfo">
+        <item>11北京一路的公交路线。</item>
+        <item>2114路的首末班车时间。</item>
+        <item>31浦东11的公交路线。</item>
+        <item>41查一下从这里到陆家嘴的公交路线。</item>
+        <item>5189路末班车是几点钟。</item>
+        <item>61110路的发车时间.</item>
+    </string-array>
+    <string-array name="help_child_tvintr">
+        <item>11现在哪个台在放爱情公寓。</item>
+        <item>21中国好声音哪个台有播。</item>
+        <item>31我要看湖南卫视。</item>
+        <item>41东方卫视在放什么节目。</item>
+        <item>51今天晚上有什么好看的电视节目。</item>
+    </string-array>
+
+    <drawable name="red_drawable">#CCAA1883</drawable>
+    <drawable name="green_drawable">#CC123Bff</drawable>
+
+    <string name="play_video_error">无法播放！</string>
+    <string name="need_navi_software">您需要下载高德导航软件才能导航。</string>
+    <string name="position_not_known">无法定位你所在的位置。</string>
+    <string name="to_position_not_known">目标地址不存在。</string>
+    <string name="open_web_error">无法打开网页！</string>
+    <string name="open_mail_error">无法打开邮箱！</string>
+    <string name="net_not_available">没有有效的网络连接！</string>
+    <string name="net_reconnect">网络出错，重连中…</string>
+    <string name="no_address_info">没有位置数据</string>
+    <string name="ola_msg_notification_title">哦啦语音</string>
+
+
+    <string-array name="weather_names_array">
+        <item>晴</item>
+        <item>雾</item>
+        <item>多云</item>
+        <item>阴</item>
+        <item>阵雨</item>
+        <item>雷阵雨</item>
+        <item>小雨</item>
+        <item>小到中雨</item>
+        <item>中雨</item>
+        <item>中到大雨</item>
+        <item>大雨</item>
+        <item>大到暴雨</item>
+        <item>暴雨</item>
+        <item>暴雨到大暴雨</item>
+        <item>大暴雨</item>
+        <item>大暴雨到特大暴雨</item>
+        <item>特大暴雨</item>
+        <item>雷阵雨伴有冰雹</item>
+        <item>雨夹雪</item>
+        <item>冻雨</item>
+        <item>阵雪</item>
+        <item>小雪</item>
+        <item>小到中雪</item>
+        <item>中雪</item>
+        <item>中到大雪</item>
+        <item>大雪</item>
+        <item>大到暴雪</item>
+        <item>暴雪</item>
+        <item>浮尘</item>
+        <item>扬沙</item>
+        <item>沙尘暴</item>
+        <item>强沙尘暴</item>
+        <item>霾</item>
+    </string-array>
+    <string-array name="sms_reply_command">
+        <item>回复</item>
+        <item>恢复</item>
+        <item>灰复</item>
+        <item>好的</item>
+        <item>OK</item>
+        <item>ok</item>
+    </string-array>
+    <string-array name="sms_not_reply_command">
+        <item>不回</item>
+        <item>算了</item>
+        <item>不要</item>
+        <item>取消</item>
+        <item>关闭</item>
+        <item>不播</item>
+    </string-array>
+    <string-array name="sms_play_content_command">
+        <item>播报</item>
+        <item>播放</item>
+        <item>博报</item>
+        <item>波宝</item>
+        <item>波霸</item>
+        <item>伙伴</item>
+    </string-array>
+    <string-array name="incoming_call_answer_call_commmand">
+        <item>接</item>
+        <item>接听</item>
+        <item>接电话</item>
+        <item>快接</item>
+    </string-array>
+    <string-array name="incoming_call_end_call_commmand">
+        <item>挂断</item>
+        <item>不接</item>
+        <item>挂掉</item>
+        <item>不要接</item>
+        <item>不想接</item>
+        <item>挂电话</item>
+        <item>算了</item>
+    </string-array>
+
+    <string name="no_app_for_action">没有执行这个功能的软件！</string>
+
+    <string-array name="poi_sort">
+        <item>默认排序</item>
+        <item>按距离排序</item>
+        <item>按星级排序</item>
+    </string-array>
+    
+    <string-array name="help_expand_name_list">
+        <item>POI</item>
+        <item>music</item>
+        <item>weather</item>
+        <item>baike</item>
+        <item>video</item>      
+        <item>call</item>
+        <item>sms</item>
+        <item>phoneBook</item>
+        <item>openApp</item>
+        <item>calendar</item>
+        <item>tv</item>
+        <item>news</item>
+        <item>poem</item>
+        <item>joke</item>
+        <item>chat</item>
+        <item>setting</item>
+        <item>alarm</item>
+        <item>navigation</item>
+        <item>remind</item>
+        <item>memo</item>
+        <item>stock</item>
+        <item>hotel</item>
+        <item>trainTicket</item>
+        <item>tickets</item>
+        <item>shopping</item>
+        <item>calculate</item>
+        <item>unitConversion</item>
+        <item>exchange</item>  
+        <item>24points</item>
+        <item>bus</item>
+        <item>search</item>
+        <!-- <item>weibo</item> -->
+    </string-array>
+</resources>

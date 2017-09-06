@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/list_item_bg" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        style="@style/selection_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/content_index_margin_left" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_secondary_img_margin_left_right" 
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+	       android:id="@+id/tv_name"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:singleLine="true"
+	       android:textColor="@color/text_content_color"
+	       android:textSize="@dimen/content_primary" />
+
+       <TextView
+	       android:id="@+id/tv_author"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/tv_name"
+	       android:layout_alignLeft="@id/tv_name"
+	       android:layout_marginTop="@dimen/content_between_vertical"
+	       android:singleLine="true"
+	       android:textColor="@color/text_content_color"
+	       android:textSize="@dimen/content_secondary" />
+        
+    </RelativeLayout>
+
+     <ImageView
+        android:id="@+id/imgv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons_play_58" 
+        android:layout_marginRight="@dimen/title_secondary_img_margin_left_right" 
+        android:contentDescription="@string/img_content_discription"/>
+
+</LinearLayout>

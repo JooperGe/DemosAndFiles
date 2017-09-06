@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/app_bg" >
+    
+    <TextView
+        android:id="@+id/share2weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="分享到微信"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/tofriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/check_update"
+        android:text="分享到微信好友"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/tofriendcircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/check_update"
+        android:text="分享到微信朋友圈"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/capturescreen2weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/check_update"
+        android:text="截屏发微信"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    
+</LinearLayout>

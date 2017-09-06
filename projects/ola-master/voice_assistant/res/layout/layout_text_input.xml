@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 手机输入内容窗体 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+   	android:background="@drawable/voice_bar_bg"
+   	android:paddingLeft="10dp"
+   	android:paddingRight="10dp">
+
+    <Button
+        android:id="@+id/btn_input_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/voice_btn_voice"
+        />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1" 
+        android:singleLine="true"
+        android:background="@drawable/bg_voice_input"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/voice_btn_bg_send"
+        android:text="@string/ok"
+        android:textColor="@android:color/white" />
+</LinearLayout>

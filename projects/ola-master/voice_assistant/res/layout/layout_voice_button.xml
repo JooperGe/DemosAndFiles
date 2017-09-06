@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sdk_voice_btn_size"
+    android:layout_height="@dimen/sdk_voice_btn_size"    
+    >
+
+    <Button
+        android:id="@+id/third_btn_voice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/voice_btn_mic" />
+
+    <ImageView
+        android:id="@+id/third_imgv_volume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/voice_volume01" />
+
+    <com.viash.voice_assistant.widget.RotateView
+        android:id="@+id/third_rotateview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

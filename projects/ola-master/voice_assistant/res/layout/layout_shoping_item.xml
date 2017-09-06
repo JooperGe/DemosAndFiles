@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_item_bg_buy"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imgv_clothes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/default_contact_img" />
+
+    <TextView
+        android:id="@+id/tv_index"
+        style="@style/selection_index" 
+        android:layout_marginLeft="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@+id/imgv_clothes"
+        android:layout_toRightOf="@+id/imgv_clothes"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/shopping_title"
+        android:textSize="@dimen/shopping_txt_title" />
+
+    <TextView
+        android:id="@+id/tv_cost_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgv_clothes"
+        android:layout_toRightOf="@+id/imgv_clothes"
+        android:textColor="@color/shopping_price_gary"
+        android:textSize="@dimen/shopping_txt_price_cost"
+        android:paddingBottom="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_cost_price"
+        android:layout_toRightOf="@+id/tv_cost_price"
+        android:textColor="@color/shopping_price_red"
+        android:textSize="@dimen/shopping_txt_price" 
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgv_clothes"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/shopping_address"
+        android:textSize="@dimen/shopping_txt_address"
+        android:drawableLeft="@drawable/shopping_icon_t"
+        android:drawablePadding="2dp" />
+
+</RelativeLayout>

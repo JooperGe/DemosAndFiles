@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:Android="http://schemas.android.com/apk/res/android"> 
+
+    <item Android:state_selected="true">
+        <shape>
+            <solid Android:color="#323232" />
+        </shape>
+    </item>
+    <item Android:state_pressed="true">
+        <shape>
+            <solid Android:color="#323232" />
+        </shape>
+    </item>
+    <!-- 
+    <item Android:drawable="@drawable/setting_item_bg">
+    </item> -->
+
+</selector>

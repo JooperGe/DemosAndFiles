@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	     >
+	    <ImageView 
+	        android:id="@+id/imgv_title"
+	        android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="18dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:src="@drawable/icn_default"/>
+	    
+		<TextView
+		    android:id="@+id/tv_description"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@+id/imgv_title"
+		    android:layout_toLeftOf="@+id/tv_title"
+		    android:layout_marginRight="50dp"
+		    android:layout_marginLeft="5dp"
+		    android:maxLines="2"
+		    android:ellipsize="end"
+		    android:text="今天天气怎么样"
+		    android:textColor="@color/text_content_color"
+		    android:textSize="13.3dp" />
+		
+		<TextView
+		    android:id="@+id/tv_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@+id/imgv_go"
+		    android:layout_marginRight="5dp"
+		    android:text="天气"
+		    android:textColor="@color/text_content_color"
+		    android:textSize="20dp" />
+		
+		<ImageView 
+	        android:id="@+id/imgv_go"
+	        android:layout_width="25dp"
+		    android:layout_height="25dp"
+		    android:layout_centerVertical="true"
+		    android:layout_marginTop="16dp"
+		    android:layout_marginBottom="16dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dp"
+		    android:src="@drawable/icon_arrow"/>
+		
+		<!-- <TextView
+		    android:id="@+id/tv_subTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:text="Weather"
+		    android:textColor="@color/text_content_color"
+		    android:textSize="@dimen/content_secondary" /> -->
+		</RelativeLayout>
+</LinearLayout>

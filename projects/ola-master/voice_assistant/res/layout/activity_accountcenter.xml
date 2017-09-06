@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_content_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/back"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/account_center"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/setting_title_text_size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/setting_content_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_account_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/login_bg_input"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageview_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.16dp"
+                android:src="@drawable/phone_icon" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.2dp"
+                android:layout_toRightOf="@id/imageview_phone"
+                android:text="@string/phone_number"
+                android:textColor="@color/setting_text_color"
+                android:textSize="18.6sp" />
+
+            <ImageView
+                android:id="@+id/imageview_array"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16.16dp"
+                android:contentDescription="@string/setting_select"
+                android:src="@drawable/setting_arrow" />
+
+            <TextView
+                android:id="@+id/tv_identifying_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.2dp"
+                android:layout_toLeftOf="@id/imageview_array"
+                android:text="@string/account_not_identify"
+                android:textColor="@color/setting_text_color"
+                android:textSize="18.6sp" />
+
+            <ImageView
+                android:id="@+id/imageview_authenticate_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/tv_identifying_status"
+                android:contentDescription="@string/setting_select"
+                android:src="@drawable/user_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/btn_login_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_blue"
+            android:text="@string/login_exit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_txt_btn" />
+    </LinearLayout>
+
+</LinearLayout>

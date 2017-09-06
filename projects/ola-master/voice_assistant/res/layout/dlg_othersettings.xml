@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.viash.voice_assistant.component.OtherSettingsView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    
+    <CheckBox android:id="@+id/cbx_display_floatview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_floatview"/>
+ 
+</com.viash.voice_assistant.component.OtherSettingsView>

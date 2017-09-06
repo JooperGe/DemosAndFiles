@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="46dp"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/title_primary_img_margin_left"
+        android:layout_gravity="center_vertical"
+        style="@style/selection_index"/>
+		    
+    <ImageView
+        android:id="@+id/imgv_call_type"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/title_primary_img_margin_left"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_call_connect" />
+	    
+    <RelativeLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="46dp"
+	    android:layout_marginLeft="@dimen/title_primary_img_margin_top_and_bottom"
+		android:orientation="horizontal"
+		android:layout_weight="1">
+		   	    
+	    <TextView
+	        android:id="@+id/tv_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:layout_centerVertical="true"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        android:textSize="@dimen/content_primary"
+	        android:textColor="@color/text_content_color"
+	        android:text="张三" 
+	        />
+	    
+	    <TextView
+	        android:id="@+id/tv_num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/tv_name"
+	        android:layout_marginLeft="@dimen/title_primary_img_margin_top_and_bottom"
+	        android:layout_centerVertical="true"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        android:textSize="@dimen/content_primary"
+	        android:textColor="@color/text_content_color"
+	        android:text="13112345678" 
+	        />
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/title_secondary_img_margin_left_right"
+        android:textSize="@dimen/content_secondary_number_2"
+        android:textColor="@color/text_content_assist_color_2"
+        android:text="12-19 10:20" />  
+</LinearLayout>

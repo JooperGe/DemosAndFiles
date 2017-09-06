@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/logo_voice_button_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_alignTop="@+id/logo"
+        android:layout_toRightOf="@+id/logo" >
+
+        <Button
+            android:id="@+id/logo_btn_voice"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/btn_voice_black" />
+
+        <ImageView
+            android:id="@+id/logo_imgv_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/logo_btn_voice"
+            android:layout_alignRight="@+id/logo_btn_voice"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_content_discription"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_speak_size12"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/logo_imgv_voice_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+
+            android:contentDescription="@string/img_content_discription"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_voice_load_blue"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/logo_imgv_mike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/voice_mike_white" />
+    </RelativeLayout>
+
+</RelativeLayout>

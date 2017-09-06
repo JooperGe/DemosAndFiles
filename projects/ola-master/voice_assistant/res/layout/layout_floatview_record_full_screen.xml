@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#79202020">
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"            
+        android:background="@drawable/voice_content_bg">
+        
+		<TextView
+		    android:id="@+id/tv_title"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="14dp"        
+	        android:text="请说话"
+	        android:textColor="#4e4e4e"
+	        android:textSize="17.5dp" />
+		
+		<LinearLayout
+		    android:id="@+id/seperate_line1" 
+		    android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/title_line_09"/>
+							
+	    <RelativeLayout
+	        android:id="@+id/layout_content_or_volume" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="157dp"	        
+	        android:layout_below="@id/seperate_line1"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="13dp" >
+	        
+	        <TextView
+			    android:id="@+id/tv_content"
+			    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"       
+		        android:layout_centerInParent="true"
+		        android:layout_marginLeft="5dp" 
+	            android:layout_marginRight="5dp"  
+		        android:text="抱歉，哦啦没听清楚，请大点声试试吧"
+		        android:textColor="@color/white"
+		        android:textSize="@dimen/content_primary"
+		        android:visibility="gone" />
+	        
+	        <RelativeLayout
+	            android:id="@+id/layout_volume"
+		        android:layout_width="283dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true" >
+		        
+		        <ImageView
+		         android:id="@+id/imgv_mic_icon"
+			     android:layout_width="131dp"
+			     android:layout_height="131dp"
+			     android:layout_centerInParent="true"
+			     android:src="@drawable/voice_mic_runing" />
+			<!--   <ImageView
+			     android:layout_width="49dp"
+			     android:layout_height="49dp"
+			     android:layout_centerInParent="true"
+			     android:src="@drawable/widget_loading_bg" /> -->     
+			    <ImageView
+			         android:id="@+id/imgv_volume_in_call"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_centerInParent="true"
+				     android:src="@drawable/voice_mic_runing_1" />
+			    
+			    <com.viash.voice_assistant.widget.RotateView
+			         android:id="@+id/rotateview"
+			         android:layout_width="131.5dp"
+			         android:layout_height="131.5dp"
+			         android:layout_centerInParent="true"
+			         android:visibility="invisible" />
+			    
+			   <ImageView
+				    android:id="@+id/ola_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/title" />			 
+		    </RelativeLayout>
+		 		    			
+	    </RelativeLayout>
+	    		    
+        <LinearLayout
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/layout_content_or_volume"
+	       android:layout_marginTop="13dp"
+	       android:gravity="center_horizontal"
+	       android:orientation="horizontal" >
+		   <Button
+		        android:id="@+id/bt_left"
+		        android:layout_width="141dp"
+		        android:layout_height="65dp"
+		        android:text="说完了"
+		        android:gravity="center"
+		        android:background="@drawable/voice_button_bg"                
+		        android:textColor="#4e4e4e"
+		        android:textSize="20dp"
+		        android:layout_weight="1" />
+		    <LinearLayout
+		       android:layout_width="2dp"
+		       android:layout_height="65dp"
+		       android:background="@drawable/voice_btn_line"
+		       android:layout_gravity="center" />
+		     <Button
+		        android:id="@+id/bt_right"
+		        android:layout_width="141dp"
+		        android:layout_height="wrap_content"
+		        android:text="取消"
+		        android:gravity="center"
+		        android:background="@drawable/voice_button_bg"                
+		        android:textColor="#4e4e4e"
+		        android:textSize="20dp"
+		        android:layout_weight="1" />
+	     </LinearLayout>
+ 
+    </RelativeLayout>
+</LinearLayout>

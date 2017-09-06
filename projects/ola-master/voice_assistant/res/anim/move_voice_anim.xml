@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false" android:visible="true">
+    <item android:drawable="@drawable/lockscreen_voice_mic_normal" android:duration="1000" />
+    <item android:drawable="@drawable/mic_pressed_show" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show2" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show3" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show4" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show5" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show6" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show7" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show8" android:duration="200" />
+    <item android:drawable="@drawable/mic_pressed_show9" android:duration="200" />
+</animation-list>
+
+ 

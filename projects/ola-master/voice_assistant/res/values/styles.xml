@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="txt_music_item">
+        <item name="android:textSize">@dimen/txt_size_content</item>
+        <item name="android:textColor">@color/txt_app_white</item>
+    </style>
+
+    <style name="txt_btn_big">
+        <item name="android:textSize">@dimen/txt_btn_big_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="txt_content">
+        <item name="android:textSize">@dimen/txt_size_content</item>
+        <item name="android:textColor">@color/txt_color</item>
+    </style>
+
+    <style name="txt_weather_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="SwitchText">
+        <item name="android:paddingLeft">8px</item>
+        <item name="android:paddingBottom">8px</item>
+        <item name="android:textColor">#FFeeFFee</item>
+        <item name="android:textSize">24dip</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="customSwitchStyle">
+        <item name="track">@drawable/switch_track_green</item>
+        <item name="thumb">@drawable/background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/customSwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">-2.5dp</item>
+        <item name="thumbTextPadding">6dp</item>
+        <item name="trackTextPadding">6dp</item>
+        <item name="switchMinWidth">48dp</item>
+        <item name="switchMinHeight">26dp</item>
+        <item name="switchPadding">6dp</item>
+    </style>
+
+    <style name="customSwitchTextAppearance">
+        <item name="textColor">#FFeeFFee</item>
+        <item name="textColorHighlight">#FFeeFFee</item>
+        <item name="textColorHint">#FFeeFFee</item>
+        <item name="textColorLink">#FFeeFFee</item>
+        <item name="textSize">16sp</item>
+        <item name="textStyle">normal</item>
+    </style>
+
+    <style name="layout_select_item">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="layout_pre_item">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="Transparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+    
+    <style name="stock_lable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/text_content_color</item>
+        <item name="android:textSize">@dimen/content_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:minWidth">50dp</item>
+       
+    </style>
+    <style name="stock_num">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:textSize">@dimen/content_primary</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="selection_index">
+        <item name="android:textSize">@dimen/selection_item_index</item>
+        <item name="android:textColor">@color/selection_item_index</item>
+        <item name="android:background">@drawable/bg_index</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">17dp</item>
+        <item name="android:minHeight">17dp</item>
+        
+        
+    </style>
+
+     <style name="poi_rating_bar" parent="@android:style/Widget.RatingBar">  
+        <item name="android:progressDrawable">@drawable/poi_ratingbar_full</item>  
+        <item name="android:minHeight">13dp</item>  
+        <item name="android:maxHeight">13dp</item>  
+    </style> 
+    
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="alarm_alert" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="clock">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+</resources>

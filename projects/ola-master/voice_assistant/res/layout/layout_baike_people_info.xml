@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/tv_nation_detail" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:text="国籍："
+             android:textColor="@color/text_content_color" 
+                android:lineSpacingExtra="8dp"
+             android:textSize="@dimen/content_primary"
+             android:id="@+id/tv_nation_logo"
+             />
+
+         <TextView
+             android:id="@+id/tv_nation"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:singleLine="true"
+             android:textColor="@color/text_content_color"
+                android:lineSpacingExtra="8dp"
+              android:textSize="@dimen/content_primary" />
+         
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" 
+         android:id="@+id/tv_ethnic_detail">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:text="民族："
+             android:textColor="@color/text_content_color" 
+                android:lineSpacingExtra="8dp"
+              android:textSize="@dimen/content_primary"
+              android:id="@+id/tv_ethnic_logo"
+               />
+
+         <TextView
+             android:id="@+id/tv_ethnic"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:singleLine="true"
+             android:textColor="@color/text_content_color"
+                android:lineSpacingExtra="8dp"
+              android:textSize="@dimen/content_primary" />
+     </LinearLayout>
+    
+     <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal" 
+	      android:id="@+id/tv_birthday_detai">
+	
+	      <TextView
+	          android:layout_width="wrap_content"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:text="出生："
+	          android:textColor="@color/text_content_color"
+	          android:lineSpacingExtra="8dp"
+	          android:textSize="@dimen/content_primary" 
+	          android:id="@+id/tv_birthday_logo"
+	           />
+	
+	      <TextView
+	          android:id="@+id/tv_birthday"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:singleLine="true"
+	          android:textColor="@color/text_content_color"
+	             android:lineSpacingExtra="8dp"
+	           android:textSize="@dimen/content_primary" />
+	  </LinearLayout>
+	  
+     <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+             android:id="@+id/tv_sex_detail" >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+                  android:lineSpacingExtra="8dp"
+               android:text="性别："
+               android:textColor="@color/text_content_color" 
+                android:textSize="@dimen/content_primary"
+                 android:id="@+id/tv_sex_logo"
+                />
+
+           <TextView
+               android:id="@+id/tv_sex"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+                  android:lineSpacingExtra="8dp"
+               android:singleLine="true"
+               android:textColor="@color/text_content_color" 
+                android:textSize="@dimen/content_primary"/>
+     </LinearLayout>
+     
+     <LinearLayout
+	       android:layout_width="wrap_content"
+	       android:layout_height="match_parent"
+	       android:layout_weight="1"
+	       android:orientation="horizontal"
+	        android:id="@+id/tv_blood_type_detail"
+	        >
+	
+	       <TextView
+	           android:layout_width="wrap_content"
+	           android:layout_height="match_parent"
+	           android:gravity="center_vertical"
+	           android:lineSpacingExtra="8dp"
+	           android:text="血型："
+	           android:id="@+id/tv_blood_type_logo"
+	           android:textColor="@color/text_content_color" 
+	           android:textSize="@dimen/content_primary"/>
+	       <TextView
+	           android:id="@+id/tv_blood_type"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:gravity="center_vertical"
+	           android:lineSpacingExtra="8dp"
+	           android:singleLine="true"
+	           android:textColor="@color/text_content_color" 
+	           android:textSize="@dimen/content_primary"/>
+	  </LinearLayout>
+	  
+     <LinearLayout
+	     android:layout_width="wrap_content"
+	     android:layout_height="match_parent"
+	     android:layout_weight="1"
+	     android:orientation="horizontal"
+	     android:id="@+id/tv_height_detail" >
+	
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:gravity="center_vertical"
+	         android:lineSpacingExtra="8dp"
+	         android:text="身高："
+	         android:id="@+id/tv_height_logo"
+	         android:textColor="@color/text_content_color" 
+	         android:textSize="@dimen/content_primary"/>
+	     <TextView
+	         android:id="@+id/tv_height"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:gravity="center_vertical"
+	         android:singleLine="true"
+	         android:lineSpacingExtra="8dp"
+	         android:textColor="@color/text_content_color" 
+	         android:textSize="@dimen/content_primary"/>
+	 </LinearLayout>
+	 <LinearLayout
+	     android:layout_width="wrap_content"
+	     android:layout_height="match_parent"
+	     android:layout_weight="1"
+	     android:orientation="horizontal"
+	     android:id="@+id/tv_weight_detail" >
+	
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:gravity="center_vertical"
+	         android:text="体重："
+	         android:lineSpacingExtra="8dp"
+	         android:textColor="@color/text_content_color" 
+	         android:textSize="@dimen/content_primary"
+	         android:id="@+id/tv_weight_logo"
+	           />
+	
+	     <TextView
+	         android:id="@+id/tv_weight"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:gravity="center_vertical"
+	         android:singleLine="true"
+	         android:lineSpacingExtra="8dp"
+	         android:textColor="@color/text_content_color"
+	         android:textSize="@dimen/content_primary" />
+	 </LinearLayout>
+	 
+	 <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal"
+	      android:id="@+id/tv_spouse_detail" >
+	
+	      <TextView
+	          android:layout_width="wrap_content"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:text="配偶："
+	          android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color" 
+	          android:textSize="@dimen/content_primary"
+	          android:id="@+id/tv_spouse_logo"     />
+	
+	      <TextView
+	          android:id="@+id/tv_spouse"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:singleLine="true"
+	          android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color" 
+	          android:textSize="@dimen/content_primary"/>
+	  </LinearLayout>
+	  <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal" 
+	        android:id="@+id/tv_children_detail">
+	
+	      <TextView
+	          android:layout_width="wrap_content"
+	          android:layout_height="match_parent"
+	          android:gravity="left"
+	          android:text="子女："
+	          android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color" 
+	          android:textSize="@dimen/content_primary"
+	           android:id="@+id/tv_children_logo"
+	         />
+	      <TextView
+	          android:id="@+id/tv_children"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color" 
+	          android:textSize="@dimen/content_primary"/>
+	  </LinearLayout>
+	
+	  <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal" 
+	      android:id="@+id/tv_school_detail">
+	
+	      <TextView
+	          android:id="@+id/tv_school_logo"
+	          android:layout_width="wrap_content"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:text="毕业院校："
+	          android:textColor="@color/text_content_color" 
+	          android:lineSpacingExtra="8dp"
+	          android:textSize="@dimen/content_primary"/>
+	
+	      <TextView
+	          android:id="@+id/tv_school"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:singleLine="true"
+	             android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color"
+	           android:textSize="@dimen/content_primary" />
+	  </LinearLayout>
+	  
+	  <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal" 
+	      android:id="@+id/tv_career_detail">
+	
+	      <TextView
+	          android:layout_width="wrap_content"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:text="职业："
+	          android:textColor="@color/text_content_color"
+	          android:lineSpacingExtra="8dp"
+	          android:textSize="@dimen/content_primary"
+	           android:id="@+id/tv_career_logo" />
+	      <TextView
+	          android:id="@+id/tv_career"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:singleLine="true"
+	          android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color" 
+	          android:textSize="@dimen/content_primary"/>
+	  </LinearLayout>
+	
+	  <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal" 
+	      android:id="@+id/tv_book_detail">
+	      <TextView
+	          android:id="@+id/tv_book_logo"
+	          android:layout_width="wrap_content"
+	          android:layout_height="match_parent"
+	          android:gravity="left"
+	          android:text="代表作品："
+	          android:lineSpacingExtra="8dp"
+	          android:textColor="@color/text_content_color" 
+	          android:textSize="@dimen/content_primary"/>
+	      <TextView
+	          android:id="@+id/tv_book"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:gravity="center_vertical"
+	          android:textColor="@color/text_content_color" 
+	             android:lineSpacingExtra="8dp"
+	           android:textSize="@dimen/content_primary"/>
+	  </LinearLayout>
+</LinearLayout>    

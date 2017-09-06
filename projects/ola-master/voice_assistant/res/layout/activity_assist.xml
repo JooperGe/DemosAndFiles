@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/statusbar_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_statusbar_login" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/statusbar_login"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/lst_communication"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/main_bottom_fixed"
+                android:background="@color/app_bg"
+                android:stackFromBottom="false"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="@dimen/main_listview_divider_height"
+                android:focusable="false"
+                android:listSelector="#00000000"
+                android:padding="@dimen/padding_small"
+                android:scrollbars="none" />
+
+            <ListView
+                android:id="@+id/lv_music"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/main_bottom_fixed"
+                android:layout_marginBottom="0dp"
+                android:background="@color/music_bg_item"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/bg_music_line"
+                android:dividerHeight="2dip"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/main_bottom_fixed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <com.viash.voice_assistant.widget.MusicPlayerView
+                    android:id="@+id/main_music_player"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:id="@+id/layout_selection_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_bg"
+                android:visibility="gone" >
+          	</RelativeLayout>
+          	            
+            <RelativeLayout
+                android:id="@+id/main_map_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible"
+                >
+                
+                <fragment
+					android:id="@+id/map"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    class="com.amap.api.maps.SupportMapFragment" />
+                
+            </RelativeLayout>
+
+            <!-- <com.viash.voice_assistant.widget.TipsView
+                android:id="@+id/main_tips_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone" /> -->
+
+            <RelativeLayout
+                android:id="@+id/layout_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/btn_last_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_webview_back" />
+
+                <Button
+                    android:id="@+id/btn_next_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/btn_last_page"
+                    android:background="@drawable/icon_webview_forward" />
+
+                <Button
+                    android:id="@+id/btn_refresh_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_webview_refresh" />
+
+                <WebView
+                    android:id="@+id/main_web_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/btn_last_page" />
+            </RelativeLayout>
+            
+           
+          	<LinearLayout
+                android:id="@+id/layout_guide_help"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/app_bg"
+                android:orientation="vertical"
+                android:visibility="gone" >
+          	</LinearLayout>   
+          	
+          	<RelativeLayout
+		        android:id="@+id/layout_help"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_alignParentLeft="true"
+		        android:background="@color/bg_color"
+		        android:visibility="gone" >
+
+		        <ExpandableListView
+		            android:id="@+id/help"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:cacheColorHint="#2c2c2c"
+		            android:divider="@color/view_color_setting"
+		            android:dividerHeight="1dp"
+		            android:groupIndicator="@null"
+		            android:scrollbars="none" />
+    		</RelativeLayout> 	
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voice_bar_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <Button
+                    android:id="@+id/btn_voice_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/voice_btn_edit" />
+
+                <Button
+                    android:id="@+id/btn_voice_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/voice_btn_more" />
+
+                <Button
+                    android:id="@+id/btn_voice_mic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/voice_btn_mic" />
+
+                <ImageView
+                    android:id="@+id/imgv_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/voice_volume01" />
+
+                <com.viash.voice_assistant.widget.RotateView
+                    android:id="@+id/rotateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/layout_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_text_input"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/statusbar_login"
+        android:layout_marginTop="-10dp"        
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/welcome"
+        android:visibility="gone" >
+
+       <!--  <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/welcome_copyright" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/welcome_ola_logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/welcome_91_logo"
+            android:visibility="gone" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+       android:id="@+id/tv_index"
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:layout_marginLeft="@dimen/content_index_margin_left"
+       android:layout_gravity="center_vertical"
+       style="@style/selection_index"/>
+    
+    <RelativeLayout
+        android:id="@+id/layout_content" 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="12.5dp"
+	    android:layout_marginBottom="12.5dp"
+	    android:layout_marginLeft="13.5dp"
+	    android:layout_weight="1" >
+	    
+	
+	    <TextView
+	        android:id="@+id/tv_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        android:textColor="@color/text_content_main_color"
+	        android:textSize="@dimen/content_primary"
+	        android:text="下午开会" />
+	    
+	    <TextView
+	        android:id="@+id/tv_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_content"
+	        android:layout_marginTop="3dp"
+	        android:textColor="@color/list_item_text"
+	        android:textSize="14sp"
+	        android:text="15:00 - 16:00" />
+		    
+	  </RelativeLayout>
+	    
+      <RelativeLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="12.5dp"
+	    android:layout_marginBottom="12.5dp"
+	    android:layout_marginRight="@dimen/whole_content_margin_right" >
+	    	
+	    <TextView
+	        android:id="@+id/tv_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="4dp"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        android:textColor="@color/text_content_assist_color_1"
+	        android:textSize="12sp"
+	        android:text="2014-01-16" />
+	    
+	    <TextView
+	        android:id="@+id/tv_week"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_date"
+	        android:layout_alignRight="@id/tv_date"
+	        android:layout_marginTop="1dp"
+	        android:textColor="@color/text_content_assist_color_1"
+	        android:textSize="12sp"
+	        android:text="星期四" />
+	    </RelativeLayout>
+	    
+</LinearLayout>

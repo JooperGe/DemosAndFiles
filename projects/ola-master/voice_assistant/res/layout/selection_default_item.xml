@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_marginLeft="@dimen/content_index_margin_left"
+        android:layout_marginRight="@dimen/content_index_margin_right"
+        style="@style/selection_index" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_margin_top_and_bottom"
+        android:layout_marginBottom="@dimen/content_margin_top_and_bottom"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+		android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/teststring"        
+        android:textColor="@color/text_content_color" 
+        android:textSize="@dimen/content_primary"/>
+
+</LinearLayout>

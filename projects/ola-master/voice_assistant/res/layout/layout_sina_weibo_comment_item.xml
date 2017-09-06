@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imgv_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/img_content_discription"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"        
+        android:layout_toRightOf="@+id/imgv_head"
+        android:textColor="@color/sina_weibo_txt_black"
+        android:textSize="@dimen/txt_sina_weibo_title"
+        android:text="名称" />
+
+    <TextView
+        android:id="@+id/tv_replay_to_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/sina_weibo_txt_black"
+        android:textSize="@dimen/txt_sina_weibo_content"
+        android:text="回复我:" />
+    
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_replay_to_me"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/sina_weibo_txt_black"
+        android:textSize="@dimen/txt_sina_weibo_content"
+        android:text="上海的天气怎么样上海的天气怎么样上海的天气怎么样" />
+    
+    <TextView
+        android:id="@+id/tv_replay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/tv_content"
+        android:paddingLeft="20dp"
+	    android:paddingRight="3dp"
+	    android:paddingTop="@dimen/content_between_vertical"
+	    android:paddingBottom="@dimen/content_between_vertical"
+	    android:background="@drawable/weibo_dialog_box"
+        android:textColor="@color/sina_weibo_txt_black"
+        android:textSize="@dimen/txt_sina_weibo_content" />  
+    
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_replay_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/sina_weibo_txt_black"
+        android:textSize="@dimen/txt_sina_weibo_content"
+        android:text="2014-01-09" />
+</RelativeLayout>

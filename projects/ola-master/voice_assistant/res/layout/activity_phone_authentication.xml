@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_content_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/back"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/phone_identifying"
+        android:textColor="@color/setting_text_color"
+        android:textSize="@dimen/setting_title_text_size" />
+
+    <LinearLayout
+        android:id="@+id/layout_get_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg_input"
+            android:hint="@string/phone_please_input_phone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@color/login_txt_forget_pwd" />
+
+        <Button
+            android:id="@+id/btn_get_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_btn_blue"
+            android:text="@string/get_identifying_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_txt_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_submit_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number_colon"
+                android:textColor="@color/login_txt_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="131*****000"
+                android:textColor="@color/login_txt_title"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_change_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_change_mobile_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/phone_change" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/login_bg_input"
+            android:hint="@string/forgetpwd_please_input_code"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@color/login_txt_forget_pwd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_submit_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_blue"
+                android:text="@string/submit_identifying_code"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/login_txt_btn" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_repeat_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_gray"
+                android:text="@string/repeat_identifying_code"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/login_txt_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
